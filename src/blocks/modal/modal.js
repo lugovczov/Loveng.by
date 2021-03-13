@@ -40,7 +40,8 @@ ready(function () {
 
       document.querySelectorAll('.modal').forEach(function (modal) {
         modal.classList.remove('modal--show');
-        modal.style.display = 'none';
+        setTimeout(modal.style.display = 'none', 300)
+        // modal.style.display = 'none';
         modal.ariaModal = null;
         modal.ariaHidden = true;
         modal.removeAttribute('role');

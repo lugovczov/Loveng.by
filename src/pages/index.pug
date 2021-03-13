@@ -1,20 +1,68 @@
 extends ../pug/layout.pug
 
 block meta
-  title Главная
+  title Memorisely
   meta(name='description', content='')
 
 //- block append head
 //-   link(rel='stylesheet', href='css/some.css')
 
-block nav
-  +main-nav('10')
 
 block content
-  h1 Заголовок
-  p Содержимое. #[a(href='blocks-demo.html') Библиотека блоков].
 
-  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illo earum ipsa dicta? Harum architecto incidunt earum beatae eius rem nulla ab blanditiis placeat voluptas. Hic velit praesentium odit eius!
+  +sidebar
+
+  +section-text-heroes
+
+  +section-logos
+
+  +section-faces
+
+  +section-product
+
+  +section-video
+
+  +section-metric
+
+  .container.w-container
+    .section
+      +line-dotted
+      .haq(data-w-id="74eea442-fbe7-98e1-88ec-8ea95da70a0b")
+      .large-break
+      +section-row-text(
+        'row half-row',
+        '18b7f008-43ef-70e9-75ba-53eb9e976183',
+        'BOOTCAMP Alumni',
+        'e9e71b41-5c08-6a63-efd7-77e7f8916eca',
+        'Meet our Bootcamp Alumni from around the world',
+        'e8bbb010-1ef0-6e90-0be7-9a0e80f23bad',
+        'We\'re proud to upskill UX / UI designers online from around the world in the latest workflows, and tools. Learn how designers from around the world enjoyed learning online with Memorisely.'
+      )
+      .medium-break
+
+      +reviews
+
+  +section-with-comments
+
+  +section-our-story
+
+  .container.white.w-container
+    .section
+      +line-dotted
+      +section-row-text(
+        'row half-row',
+        'd5fd3202-f2b2-e702-1e87-a3783b83be85',
+        'Our Values',
+        'd3039bb6-10c1-924c-9e2c-e4e76e04f3a3',
+        'What makes Memorisely different',
+        '01b88e52-7919-2cb2-e652-e3880354da1c',
+        'We\'re not driven by money or interested in becoming a mystical unicorn. We happily cut through the noise and teach designers personally, taking a 100% learn-by-doing approach with a zero powerpoint policy.'
+      )
+      .border-break
+      +metrics
+
+  +section-bg-text
+
 
 //- block footer
 //-   p footer

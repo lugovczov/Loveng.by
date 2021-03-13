@@ -20,27 +20,16 @@ mixin main-nav(selectedID)
             +main-nav-sublist-wrapper(2)
               each menuItem2 in menuItem.childs
                 +main-nav-item(selectedID, menuItem2, 2)
-                  if (typeof(menuItem2.childs) !== 'undefined' && menuItem2.childs)
-                    +main-nav-sublist-wrapper(3)
-                      each menuItem3 in menuItem2.childs
-                        +main-nav-item(selectedID, menuItem3, 3)
 
 mixin main-nav-item(selectedID, item, level)
   -
-    var thisItemClass = 'main-nav__item';
-    var thisLinkClass = 'main-nav__link';
-    if(selectedID == item.id) {
-      thisItemClass += '  main-nav__item--active';
-    }
-    if(item.childs) {
-      thisItemClass += '  main-nav__item--has-child';
-    }
+    var thisLinkClass = 'ghost w-button';
+
     if(level > 1) {
-      thisItemClass += '  main-nav__item--lvl-' + level;
       thisLinkClass += '  main-nav__link--lvl-' + level;
     }
 
-  li(class= thisItemClass)
+  li
     a(class= thisLinkClass, href=item.url)= item.name
     block
 

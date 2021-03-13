@@ -1,0 +1,35 @@
+mixin section-with-comments
+
+  .container.w-container
+    .section
+      +line-dotted
+      +section-row-text(
+        'row half-row',
+        '891c9112-81fe-4d01-8c42-00841d5ed5d6',
+        'Our UX/UI community',
+        'e332c60c-abb0-792a-d47a-874834f9c3df',
+        'Click with 3000+ friendly UX/UI Designers',
+        'e332c60c-abb0-792a-d47a-874834f9c3e1',
+        'At the heart of Memorisely is our friendly UX/UI tribe of 3000+ UX/UI designers around the world who come together everyday to learn from each other.'
+      )
+
+      include nav-cards.data.pug
+
+      +nav-cards(cards)
+
+      .border-break
+      .tribe-tesimonial-container
+
+        include section-with-comments.data.pug
+
+        .tribe-column.left-column
+          each review in reviews[0]
+            +review-item(review)
+
+        .tribe-column.central-column
+          each review in reviews[1]
+            +review-item(review)
+
+        .tribe-column.right-column
+          each review in reviews[2]
+            +review-item(review)

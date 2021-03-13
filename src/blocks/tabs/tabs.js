@@ -31,16 +31,16 @@ document.addEventListener('DOMContentLoaded', function(){
    */
   function showTab(tabId){
     var element = document.querySelector(tabId);
-    if ( element && element.classList.contains('tabs__content-item') ) {
+    if ( element && element.classList.contains('w-tab-pane') ) {
       var tabsParent = document.querySelector(tabId).closest('.tabs');
-      var activeTabClassName = 'tabs__link-wrap--active';
-      var activeTabContentClassName = 'tabs__content-item--active';
+      var activeTabClassName = 'w--current';
+      var activeTabContentClassName = 'w--tab-active';
       // таб
       tabsParent.querySelectorAll('.'+activeTabClassName).forEach(function(item){
         item.classList.remove(activeTabClassName);
       });
       var activeTab = tabsParent.querySelector('[href="'+tabId+'"]') ? tabsParent.querySelector('[href="'+tabId+'"]') : tabsParent.querySelector('[data-target="'+tabId+'"]')
-      activeTab.closest('.tabs__link-wrap').classList.add(activeTabClassName);
+      activeTab.closest('.w-tab-link').classList.add(activeTabClassName);
       // контент таба
       tabsParent.querySelectorAll('.'+activeTabContentClassName).forEach(function(item){
         item.classList.remove(activeTabContentClassName);

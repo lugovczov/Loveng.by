@@ -1,0 +1,21 @@
+mixin metric(metric, number)
+
+  .metric-block.light
+    h4.no-margin.purple= number + '.'
+    h6= metric.title
+    .regular-text= metric.description
+
+
+mixin metrics
+  include metrics.data.pug
+
+  div
+    .w-layout-grid._3-columns
+      each metric, index in metrics[0]
+        +metric(metric, index + 1)
+
+    .border-break.hide-mobile
+
+    .w-layout-grid._3-columns
+      each metric, index in metrics[1]
+        +metric(metric, (index + 1) + metrics[0].length)

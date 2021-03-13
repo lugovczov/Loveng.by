@@ -1,0 +1,27 @@
+mixin sidebar-column(column)
+
+    .footer-column
+      .footer-header.slider-capitals
+        .capitals.slider-capitals= column.title
+      each link in column.links
+        .footer-link
+          a(href= link.url)= link.title
+
+
+mixin sidebar
+
+  #sidebar.slider
+    .slide-menu
+      .slider-header
+        +logo('/', 'navbar-logo-container w-inline-block w--current')
+          .navbar-logo-image
+          .logo-text Memorisely
+        #closeSidebar.outline.nav-outline Close
+      .slider-body
+
+        include sidebar.data.pug
+
+        each column in sidebarColumns
+          +sidebar-column(column)
+
+        .break

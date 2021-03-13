@@ -1,0 +1,41 @@
+#sidebar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  transform: translateX(-1000px);
+  animation: translateClose 0.5s linear;
+}
+
+#sidebar.open {
+  transform: translateX(0);
+  left: 0;
+  animation: translateOpen 0.5s linear;
+}
+
+#openSidebar,
+#closeSidebar {
+  cursor: pointer;
+}
+
+@keyframes translateOpen {
+  0% {
+    transform: translateX(-1000px);
+    left: -1000px;
+  }
+  100% {
+    transform: translateX(-0px);
+    left: 0;
+  }
+}
+
+@keyframes translateClose {
+  0% {
+    transform: translateX(-0px);
+    left: 0;
+  }
+  100% {
+    transform: translateX(-1000px);
+    left: -1000px;
+  }
+}

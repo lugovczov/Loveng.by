@@ -1,0 +1,27 @@
+mixin nav-cards-item(card)
+
+    a.nav-card.w-inline-block(data-w-id="cd58a712-ccf2-1553-757c-263c1ec45c81", href=card.link)
+      .bootcamp-card-image.nav-bootcamp(class=card.className)
+      .card-body
+        h6= card.title
+        .small-text= card.description
+
+        .small-break
+        if card.btnWithImg
+          div(class=card.btnClass)
+            img(
+              src=card.btnSrc,
+              loading="lazy",
+              alt='logo ' + card.title,
+              class=card.btnImgClass
+              )
+            div= card.btnText
+        else
+          .text-link= card.btnText
+
+
+mixin nav-cards(cards)
+
+  .w-layout-grid.three-column-nav.quad
+    each card in cards
+      +nav-cards-item(card)

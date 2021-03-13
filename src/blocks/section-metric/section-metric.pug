@@ -1,0 +1,21 @@
+mixin metric-item(metric)
+  .metric-block.light
+    .metric-mount-block
+      h4.no-margin= metric.rate
+    .tiny-break
+    .metric-block
+      .capitals= metric.title
+      .regular-text= metric.description
+
+
+mixin section-metric
+  include section-metric.data.pug
+
+  .strip
+    .container.white.w-container(data-w-id="79efc24e-e135-4f52-538b-b5f63709e250")
+      .section
+        +line-dotted
+
+        .w-layout-grid.metric-grid
+          each metric in metrics
+            +metric-item(metric)

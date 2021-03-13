@@ -84,10 +84,5 @@
     "choices.js": "^9.0.1",
     "closest": "0.0.1",
     "svg4everybody": "^2.1.8"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

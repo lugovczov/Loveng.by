@@ -1,0 +1,39 @@
+mixin bootcamp-tool(className, src, sizes, alt, count)
+  if src
+    div(class=className)
+      if sizes
+        img.card-tool-logo(src=src, alt=alt, sizes=sizes)
+      else
+        img.card-tool-logo(src=src, alt=alt)
+  else if count
+    div(class=className)= count
+  else
+    div(class=className)
+
+
+mixin product-rating(rating)
+  - var maxRating = 5
+  .small-text= rating + '/' + maxRating + ' · ' + (rating / maxRating * 100) + '% completion rate'
+
+mixin products-wrapper
+
+  include products-wrapper.data.pug
+
+    .w-layout-grid.three-column-nav
+      each product in products
+        a.nav-card.w-inline-block(data-w-id=product.dataWId, href=product.url)
+          div(class=product.classBg + ' bootcamp-card-image nav-bootcamp card-bottom')
+            .bootcamp-tools
+              each tool in product.bootcampTools
+                +bootcamp-tool(tool.className, tool.src, tool.sizes, tool.alt, tool.count)
+          .card-body
+            .inline
+              img.stars(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f9bd5f9acf2ce621f065eaf_RED_STAR.svg", alt="stars for rating", loading="lazy")
+              +product-rating(product.rating)
+            .tiny-break
+            h6= product.title
+            .small-text.black= product.employment + ' · ' + product.duration
+            .full-line
+            .small-text= product.description
+            .small-break
+            div(class=product.btnClass) View Bootcamp

@@ -1,0 +1,45 @@
+mixin reviews
+
+  .tabs.w-tabs(data-duration-in="300", data-duration-out="100")
+    +tabs([
+      {
+        'id': 'tab-1',
+        'text': '💻 UX/UI',
+        'isActive': true,
+      },
+      {
+        'id': 'tab-2',
+        'text': '✏️ Design System',
+      },
+    ], 'tabs-menu w-tab-menu')
+      +tabs-item('tab-1', true, 'some')
+        .break
+        .tribe-tesimonial-container.full-testimonial
+
+          include reviews-one-part.data.pug
+
+          .tribe-column.left-column
+            each review in reviewsOnePart[0]
+              +review-item(review)
+          .tribe-column.central-column
+            each review in reviewsOnePart[1]
+              +review-item(review)
+          .tribe-column.right-column
+            each review in reviewsOnePart[2]
+              +review-item(review)
+
+      +tabs-item('tab-2')
+        .break
+        .tribe-tesimonial-container.full-testimonial
+
+          include reviews-two-part.data.pug
+
+          .tribe-column.left-column
+            each review in reviewsTwoPart[0]
+              +review-item(review)
+          .tribe-column.central-column
+            each review in reviewsTwoPart[1]
+              +review-item(review)
+          .tribe-column.right-column
+            each review in reviewsTwoPart[2]
+              +review-item(review)

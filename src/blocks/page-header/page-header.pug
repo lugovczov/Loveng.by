@@ -1,22 +1,18 @@
 //- Все примеси в этом файле должны начинаться c имени блока (page-header)
 
-mixin page-header(mods)
+mixin page-header
 
-  //- Принимает:
-  //-   mods  {string} - список модификаторов
-  //- Вызов:
-        +page-header()
-          p «Шапка»
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' page-header--' + modsList[i].trim();
-      }
-    }
+  .navbar.full-bar
+    .navbar-marketing
+      +logo('/', 'navbar-logo-container w-inline-block w--current')
+        .navbar-logo-image
+        .logo-text Memorisely
 
-  header.page-header(class=allMods, role='banner')&attributes(attributes)
-    .page-header__inner
-      block
+      .navbar-item-container
+        +live-dot
+        block nav
+          +main-nav('')
+        .gap
+        +btn('Посмотреть учебные курсы', 'outline nav-outline w-button')
+
+      #openSidebar.outline.hide-desktop Menu

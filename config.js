@@ -12,6 +12,7 @@ let config = {
     // 'sprite-png',
   ],
   'addStyleBefore': [
+    'src/scss/global.scss',
     'src/scss/variables.scss',
     'src/scss/mixins.scss',
     // 'somePackage/dist/somePackage.css', // для 'node_modules/somePackage/dist/somePackage.css',

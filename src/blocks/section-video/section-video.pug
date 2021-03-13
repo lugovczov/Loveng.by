@@ -1,0 +1,21 @@
+mixin section-video
+
+  .container.dark.w-container
+    .section
+      +line-dotted
+      +section-row-text(
+        'row half-row',
+        '5076c64d-564f-dd1d-4672-1ca6e0e4cb5c',
+        'MICRO ONLINE CLASSES',
+        '1baad0c4-18b8-1db7-9e80-8359f39e8850',
+        'Learn-by-doing with a micro class around the world',
+        '1baad0c4-18b8-1db7-9e80-8359f39e8852',
+        'Memorisely is an affordable, accessible way to learn UX/UI online with designers around the world. We connect you with 10 designers around the world and teach you live wherever you are with the latest real-time design tools.'
+      )
+      .large-break
+      .row._100
+        .video-container(data-w-id="8205fda0-0709-4707-6d41-b7749939175f")
+          .video-2.w-video.w-embed(data-w-id="aad4ce8a-4307-f2b3-5dfd-dca11a3a7ab3")
+            +embed-responsive()
+              iframe(src='https://www.youtube.com/embed/Ncw-XN7MIws', frameborder='0', allowfullscreen='')
+

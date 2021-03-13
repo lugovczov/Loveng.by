@@ -11,4 +11,5 @@ require('../modal/modal.js');
 require('../tabs/tabs.js');
 require('../baron/baron.js');
 require('../form-validation/form-validation.js');
+require('../sidebar/sidebar.js');
 require('../../js/script.js');
