@@ -16,6 +16,9 @@ html(class='page  no-js', lang='ru')
     meta(name='format-detection', content='email=no')
     meta(content='notranslate', name='google')
 
+    link(href="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fcdf394031b_medium_favicon.png", rel="shortcut icon", type="image/x-icon")
+    link(href="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f9f5e940318_medium_favicon.png", rel="apple-touch-icon")
+
     //- Предзагрузка шрифтов или иных ресурсов
     //- link(rel='preload', href='fonts/Bloggersans.woff2', as='font', type='font/woff2', crossorigin='anonymous')
 
@@ -38,25 +41,18 @@ html(class='page  no-js', lang='ru')
       script
         include ../js/head-script.js
 
-  body
+  body.body
     noscript У вас отключен JavaScript. Это пугает.
 
-    .page__inner
-      .page__content
+    .body-wrapper
 
-        +page-header()
-          +logo('/')
-            img(src='img/demo-logo.svg', alt='Logo', width='64', height='15')
-          block nav
+      +page-header
 
-        block content
-          p содержимое
+      block content
+        p содержимое
 
-      .page__footer-wrapper
-        +page-footer()
-          block footer
-            p «Подвал»
-            p Контактный телефон: #[a(href='tel:+70000000000') +7 000 000 00 00]
+
+      +page-footer
 
     block page-bottom
       script(src='js/bundle.js')
