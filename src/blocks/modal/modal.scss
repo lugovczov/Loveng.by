@@ -110,6 +110,9 @@
   animation: modal-backdrop 0.3s 1 ease-out forwards;
 }
 
+.modal-backdrop_hide {
+  animation: modal-backdrop-hide 0.3s 1 ease-out forwards;
+}
 
 
 @keyframes modal-backdrop {
@@ -120,6 +123,17 @@
 
   to {
     opacity: 0.6;
+  }
+}
+
+@keyframes modal-backdrop-hide {
+
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 

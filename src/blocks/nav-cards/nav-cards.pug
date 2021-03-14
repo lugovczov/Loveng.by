@@ -1,6 +1,6 @@
 mixin nav-cards-item(card)
 
-    a.nav-card.w-inline-block.wow.fadeInUp(href=card.link)
+    a.nav-card.w-inline-block.wow.fadeInUp(href=card.link, data-toggle="modal")
       .bootcamp-card-image.nav-bootcamp(class=card.className)
       .card-body
         h6= card.title

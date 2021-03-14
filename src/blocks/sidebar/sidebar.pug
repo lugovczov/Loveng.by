@@ -5,7 +5,7 @@ mixin sidebar-column(column)
         .capitals.slider-capitals= column.title
       each link in column.links
         .footer-link
-          a(href= link.url)= link.title
+          a(href= link.url, data-toggle="modal")= link.title
 
 
 mixin sidebar

@@ -2237,7 +2237,8 @@ strong {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  padding-left: 30px;
 }
 
 .fill {
@@ -4659,6 +4660,11 @@ strong {
 
 .progress-bar.enrol-progress.final-step {
   width: 100%;
+  background-color: #e16259
+}
+
+.progress-bar.enrol-progress.half-steep {
+  width: 50%;
   background-color: #e16259
 }
 
@@ -11746,7 +11752,6 @@ strong {
   }
   .progress-bar-container {
     position: absolute;
-    left: auto;
     top: 40px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -12879,6 +12884,10 @@ strong {
     width: 40px;
     height: 40px
   }
+  .progress-bar-container {
+    left: 80px;
+    width: 160px;
+  }
   .progress-bar {
     width: 100%
   }
@@ -13371,4 +13380,18 @@ strong {
   font-weight: 600;
   font-style: normal;
   font-display: auto;
+}
+
+.modal_close span {
+  position: relative !important;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  font-size: 1.5rem !important;
+  color: #000 !important;
+}
+
+.modal_close span:before,
+.modal_close span:after {
+  display: none;
 }

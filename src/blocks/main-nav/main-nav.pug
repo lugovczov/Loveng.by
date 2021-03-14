@@ -30,7 +30,7 @@ mixin main-nav-item(selectedID, item, level)
     }
 
   li
-    a(class= thisLinkClass, href=item.url)= item.name
+    a(class= thisLinkClass, href=item.url, data-toggle="modal")= item.name
     block
 
 mixin main-nav-sublist-wrapper(level)

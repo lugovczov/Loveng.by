@@ -247,6 +247,7 @@ function compileSass() {
   const fileList = [
     `${dir.src}scss/style.scss`,
     `${dir.src}css/animate.css`,
+    `${dir.src}css/bootstrap.min.css`,
   ];
   if(buildLibrary) fileList.push(`${dir.blocks}blocks-library/blocks-library.scss`);
   return src(fileList, { sourcemaps: true })
@@ -303,7 +304,9 @@ exports.writeJsRequiresFile = writeJsRequiresFile;
 function buildJs() {
   const entryList = {
     'bundle': `./${dir.src}js/entry.js`,
-    'wow': `./${dir.src}js/libs/wow.js`
+    // 'wow': `./${dir.src}js/libs/wow.js`,
+    // 'jquery': `./${dir.src}js/libs/jquery-3.2.1.slim.min.js`,
+    // 'bootstrap': `./${dir.src}js/libs/bootstrap.bundle.min.js`,
   };
   if(buildLibrary) entryList['blocks-library'] = `./${dir.blocks}blocks-library/blocks-library.js`;
   return src(`${dir.src}js/entry.js`)
@@ -340,6 +343,12 @@ function buildJs() {
 }
 exports.buildJs = buildJs;
 
+function buildPHP() {
+  return src(`./${dir.src}php/feedback.php`)
+    .pipe(dest(`${dir.build}php`));
+}
+exports.buildPHP = buildPHP;
+
 
 function clearBuildDir() {
   return del([
@@ -375,7 +384,7 @@ function serve() {
   watch([`${dir.src}pages/**/*.pug`], { events: ['change', 'add'], delay: 100 }, series(
     compilePugFast,
     parallel(writeSassImportsFile, writeJsRequiresFile),
-    parallel(compileSass, buildJs),
+    parallel(compileSass, buildJs, buildPHP),
     reload
   ));
 
@@ -410,7 +419,7 @@ function serve() {
   watch([`${dir.src}pug/**/*.pug`, `!${dir.src}pug/mixins.pug`], { delay: 100 }, series(
     compilePug,
     parallel(writeSassImportsFile, writeJsRequiresFile),
-    parallel(compileSass, buildJs),
+    parallel(compileSass, buildJs, buildPHP),
     reload,
   ));
 
@@ -461,7 +470,7 @@ exports.build = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
-  parallel(compileSass, buildJs),
+  parallel(compileSass, buildJs, buildPHP),
 );
 
 
@@ -469,7 +478,7 @@ exports.default = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
-  parallel(compileSass, buildJs),
+  parallel(compileSass, buildJs, buildPHP),
   serve,
 );
 

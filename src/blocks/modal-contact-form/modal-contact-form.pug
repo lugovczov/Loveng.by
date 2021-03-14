@@ -1,0 +1,31 @@
+mixin modal-contact-form
+
+  #modalContactForm.modal.fade(tabindex="-1", role="dialog", aria-labelledby="modal page in dev", aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+      .modal-content
+        .modal-body
+          +logo('/', 'application-logo-link w-inline-block')
+            .navbar-logo-image
+
+          .progress-bar-container
+            .progress-bar
+            .progress-bar.enrol-progress.half-steep
+
+          button.close.modal_close(data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") ×
+
+          form.form(method="post" action="php/feedback.php")
+
+            label.small-text(for="name") Ваше имя:
+              span *
+            input.input.w-input(maxlength="256", type="text", name="name", id="name", placeholder="Иван", required)
+
+            label.small-text(for="mail") Ваш email:
+              span *
+            input.input.w-input(maxlength="256", type="email", name="email", id="email", placeholder="ivan@petrov.com", required)
+
+            label.small-text(for="phone") Ваш телефон:
+              span *
+            input.input.w-input(maxlength="256", type="tel", name="phone", id="phone", placeholder="+375 33 123 45 67", required)
+
+            input.fill.full.large.w-button(type="submit", id="submit", value="Отправить", disabled)

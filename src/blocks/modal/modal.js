@@ -20,7 +20,7 @@ ready(function () {
 
     function showModal(targetModalNode) {
       if ((document.body.clientHeight - document.documentElement.clientHeight) > 0) {
-        document.body.style.paddingRight = bodyPaddingRightOriginal + getScrollSize() + 'px';
+        // document.body.style.paddingRight = bodyPaddingRightOriginal + getScrollSize() + 'px';
       }
       document.body.classList.add('modal-open');
 
@@ -36,18 +36,20 @@ ready(function () {
 
     function closeAllModals() {
       document.body.classList.remove('modal-open');
-      document.body.style.paddingRight = '';
+      // document.body.style.paddingRight = '';
 
       document.querySelectorAll('.modal').forEach(function (modal) {
         modal.classList.remove('modal--show');
-        setTimeout(modal.style.display = 'none', 300)
+        // setTimeout(modal.style.display = 'none', 3000)
         // modal.style.display = 'none';
         modal.ariaModal = null;
         modal.ariaHidden = true;
         modal.removeAttribute('role');
       });
 
-      backdrop.remove();
+      backdrop.className = 'modal-backdrop modal-backdrop_hide';
+      // setTimeout(backdrop.remove(), 3000)
+      // backdrop.remove();
     }
   });
 

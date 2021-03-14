@@ -1,0 +1,11 @@
+mixin modal-in-dev
+
+  #modalInDev.modal.fade(tabindex="-1", role="dialog", aria-labelledby="modal page in dev", aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+      .modal-content
+        .modal-header
+          h5 Страница в разработке
+          button.close.modal_close(data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body.
+          Наш сайт расширяется и эта сраница скоро будет добавлена.

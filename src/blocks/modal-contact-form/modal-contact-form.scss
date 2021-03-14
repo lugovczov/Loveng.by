@@ -1,0 +1,12 @@
+.application-logo-link {
+  position: initial;
+}
+
+#submit {
+  transition: opacity 0.1s;
+
+  &:disabled {
+    opacity: 0.75;
+  }
+}
+

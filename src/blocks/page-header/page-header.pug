@@ -13,6 +13,6 @@ mixin page-header
         block nav
           +main-nav('')
         .gap
-        +btn('Посмотреть учебные курсы', 'outline nav-outline w-button')
+        button.outline.nav-outline.w-button(data-toggle="modal", data-target="#modalInDev") Посмотреть учебные курсы
 
       #openSidebar.outline.hide-desktop Menu

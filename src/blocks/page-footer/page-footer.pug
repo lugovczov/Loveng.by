@@ -4,7 +4,7 @@ mixin footer-column(column)
       .capitals= column.title
     each link in column.links
       .footer-link
-        a(href= link.url)= link.title
+        a(href= link.url, data-toggle="modal")= link.title
         if link.notify
           .notify
             span= link.notify
@@ -25,9 +25,9 @@ mixin page-footer()
             div
               strong.bold-text-3 © Memorisely Ltd 2020
               <br>
-              a.small-link(href="/terms-of-service") Terms
-              span.mr-5.ml-5 &amp;
-              a.small-link(href="/privacy-policy") Privacy
+              a.small-link(href="#modalInDev", data-toggle="modal") Terms
+              span.mr-1.ml-1 &amp;
+              a.small-link(href="#modalInDev", data-toggle="modal") Privacy
 
           include page-footer.data.pug
 
