@@ -1,6 +1,6 @@
 // /* global document console */
 
-// import ready from 'Utils/documentReady.js';
+import ready from 'Utils/documentReady.js';
 // import getScrollSize from 'Utils/getScrollSize.js';
 
 // ready(function() {
@@ -13,3 +13,7 @@
 // $(function() {
 //   console.log('jQuery героически сработал!');
 // });
+
+ready(
+  new WOW().init()
+)

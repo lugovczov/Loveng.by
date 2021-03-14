@@ -1,0 +1,208 @@
+[class*="cursor_"] {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+[class*="memorisers-face_"] {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+// 1 block
+.cursor_1 {
+  -webkit-transform: translate3d(-80px, -60px, 0);
+  -webkit-animation-name: 'cursor_1';
+}
+
+.memorisers-face_1 {
+  -webkit-transform: translate3d(-80px, -60px, 0);
+  -webkit-animation-name: 'memorisers-face_1';
+}
+
+@keyframes cursor_1 {
+  0% {
+    -webkit-transform: translate3d(-80px, -60px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-213px, -83px, 0);
+  }
+}
+
+@keyframes memorisers-face_1 {
+  0% {
+    -webkit-transform: translate3d(-80px, -60px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// 2 block
+.cursor_2 {
+  -webkit-transform: translate3d(200px, -65px, 0);
+  -webkit-animation-name: 'cursor_2';
+}
+
+.memorisers-face_2 {
+  -webkit-transform: translate3d(200px, -65px, 0);
+  -webkit-animation-name: 'memorisers-face_2';
+}
+
+@keyframes cursor_2 {
+  0% {
+    -webkit-transform: translate3d(200px, -65px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, -100px, 0px);
+  }
+}
+
+@keyframes memorisers-face_2 {
+  0% {
+    -webkit-transform: translate3d(200px, -65px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// 3 block
+.cursor_3 {
+  -webkit-transform: translate3d(-100px, -20px, 0);
+  -webkit-animation-name: 'cursor_3';
+}
+
+.memorisers-face_3 {
+  -webkit-transform: translate3d(-100px, -20px, 0);
+  -webkit-animation-name: 'memorisers-face_3';
+}
+
+@keyframes cursor_3 {
+  0% {
+    -webkit-transform: translate3d(-100px, -20px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-121px, 97px, 0px);
+  }
+}
+
+@keyframes memorisers-face_3 {
+  0% {
+    -webkit-transform: translate3d(-100px, -20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// 4 block
+.cursor_4 {
+  -webkit-transform: translate3d(100px, 20px, 0);
+  -webkit-animation-name: 'cursor_4';
+}
+
+.memorisers-face_4 {
+  -webkit-transform: translate3d(100px, 20px, 0);
+  -webkit-animation-name: 'memorisers-face_4';
+}
+
+@keyframes cursor_4 {
+  0% {
+    -webkit-transform: translate3d(100px, 20px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(265px, 10px, 0px);
+  }
+}
+
+@keyframes memorisers-face_4 {
+  0% {
+    -webkit-transform: translate3d(100px, 20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// 5 block
+.cursor_5 {
+  -webkit-transform: translate3d(-80px, 120px, 0);
+  -webkit-animation-name: 'cursor_5';
+}
+
+.memorisers-face_5 {
+  -webkit-transform: translate3d(-80px, 120px, 0);
+  -webkit-animation-name: 'memorisers-face_5';
+}
+
+@keyframes cursor_5 {
+  0% {
+    -webkit-transform: translate3d(-80px, 120px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 161px, 0px);
+  }
+}
+
+@keyframes memorisers-face_5 {
+  0% {
+    -webkit-transform: translate3d(-80px, 120px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// 6 block
+.cursor_6 {
+  -webkit-transform: translate3d(80px, 200px, 0);
+  -webkit-animation-name: 'cursor_6';
+}
+
+.memorisers-face_6 {
+  -webkit-transform: translate3d(80px, 200px, 0);
+  -webkit-animation-name: 'memorisers-face_6';
+}
+
+@keyframes cursor_6 {
+  0% {
+    -webkit-transform: translate3d(80px, 200px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 200px, 0px);
+  }
+}
+
+@keyframes memorisers-face_6 {
+  0% {
+    -webkit-transform: translate3d(80px, 200px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}

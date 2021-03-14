@@ -1,8 +1,45 @@
-// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+.live-dot:before {
+  content: ' ';
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #e16259;
+  border-radius: 50%;
+}
 
-.page-header {
+.live-dot:after {
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  background-color: #e16259;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3) inset;
+  -webkit-animation-name: 'ripple';
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+}
 
-  $block-name:                &; // #{$block-name}__element
+@keyframes ripple {
+  0% {
+    left: 6px;
+    top: 6px;
+    opcity: 100;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    left: -19px;
+    top: -19px;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+  }
 }

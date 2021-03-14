@@ -36,7 +36,7 @@ mixin tabs(props, mods)
     }
 
   .tabs(class=allMods)&attributes(attributes)
-    ul.tabs-menu.w-tab-menu(role='tablist')
+    ul.tabs-menu.w-tab-menu.wow.fadeInUp(role='tablist')
       each tab in props
         -
           var isActive = (typeof(tab.isActive) !== 'undefined' && tab.isActive) ? '  w--current' : ''

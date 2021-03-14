@@ -21,7 +21,7 @@ mixin products-wrapper
 
     .w-layout-grid.three-column-nav
       each product in products
-        a.nav-card.w-inline-block(data-w-id=product.dataWId, href=product.url)
+        a.nav-card.w-inline-block.wow.fadeInUp(href=product.url)
           div(class=product.classBg + ' bootcamp-card-image nav-bootcamp card-bottom')
             .bootcamp-tools
               each tool in product.bootcampTools

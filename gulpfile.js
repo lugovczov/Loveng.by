@@ -246,6 +246,7 @@ exports.writeSassImportsFile = writeSassImportsFile;
 function compileSass() {
   const fileList = [
     `${dir.src}scss/style.scss`,
+    `${dir.src}css/animate.css`,
   ];
   if(buildLibrary) fileList.push(`${dir.blocks}blocks-library/blocks-library.scss`);
   return src(fileList, { sourcemaps: true })
@@ -302,6 +303,7 @@ exports.writeJsRequiresFile = writeJsRequiresFile;
 function buildJs() {
   const entryList = {
     'bundle': `./${dir.src}js/entry.js`,
+    'wow': `./${dir.src}js/libs/wow.js`
   };
   if(buildLibrary) entryList['blocks-library'] = `./${dir.blocks}blocks-library/blocks-library.js`;
   return src(`${dir.src}js/entry.js`)

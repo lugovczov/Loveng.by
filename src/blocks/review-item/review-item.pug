@@ -1,10 +1,10 @@
 mixin review-item(item)
 
-  .testimonial(data-w-id="eced593e-1c93-f2e1-2b4c-d3e9bfb53dfc")
-    .testimonial-header(data-w-id="eced593e-1c93-f2e1-2b4c-d3e9bfb53dfd")
+  .testimonial.wow.fadeInUp
+    .testimonial-header.wow.fadeInUp
       div(class=item.name.toLowerCase() + ' testimonial-avatar')
       .avatar-text-container
         .regular-text.black= item.name
         .small-text= item.position + ' · ' + item.country
     .testimonial-body
-      .regular-text(data-w-id="eced593e-1c93-f2e1-2b4c-d3e9bfb53e0b")= item.text
+      .regular-text.wow.fadeInUp= item.text

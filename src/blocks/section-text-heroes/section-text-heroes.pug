@@ -1,47 +1,46 @@
-mixin hero-face-container(dataWId, src, srcSet, name)
+mixin hero-face-container(src, srcSet, name, index)
   img(
     src=src,
-    data-w-id=dataWId,
     sizes="(max-width: 991px) 100vw, (max-width: 1279px) 94vw, (max-width: 1439px) 1198px, 1358px"
     srcset=srcSet
     alt='face teacher ' + name
-    class='memorisers-face ' + name
+    class='memorisers-face ' + name + ' memorisers-face_' + index
   )
 
 
 mixin section-text-heroes
 
-  .container.w-container(data-w-id="e1a36570-0cce-7c56-812f-d4bce055cb65")
+  .container.w-container
     .section.center-align.top-header
       +line-dotted
 
       .w-layout-grid.hero-columns
         div
-          h1(data-w-id="96bf00a1-e7b6-7fda-edc6-56de8934a99f").
+          h1.wow.fadeInUp.
             Learn UX/UI online with live micro classes
-          .large-text(data-w-id="845a69d3-32a7-11c3-a726-1de2d4b7e12b").
+          .large-text.wow.fadeInUp.
             Memorisely is an online immersive UX/UI Bootcamp. Join 10 designers around the world
             and learn the skills of a UX/UI designer during live classes.
           .break
-          a.fill.large.mobile-full.w-inline-block(href="/", data-w-id="4cd625cd-4ed5-c5b6-97e7-2342f49911ea")
+          a.fill.large.mobile-full.w-inline-block.wow.fadeInUp(href="/")
             div View Bootcamps
         .hero-wrapper
           .w-layout-grid.hero-faces
             .hero-face-container
-              +hero-face-container('fc0812e4-8669-9ed6-a83d-3812e5cfad6e', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero.png 550w', 'james')
-              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/6012680f7f71a225da34017f_james_icon.svg", data-w-id="3a0515ef-4658-6516-b652-795bdcd3c053", alt="icon cursor james", class="kate-cursor")
+              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero.png 550w', 'james', '1')
+              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/6012680f7f71a225da34017f_james_icon.svg", alt="icon cursor james", class="kate-cursor cursor_1")
             .hero-face-container
-              +hero-face-container('1054921e-fc58-6b4c-2568-9790e660b96d', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero.png 550w', 'eli')
-              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/60126981de376c4d792e4848_laura_icon.svg", data-w-id="1054921e-fc58-6b4c-2568-9790e660b96d", alt="icon cursor laura", class="connor-cursor")
+              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero.png 550w', 'eli', '2')
+              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/60126981de376c4d792e4848_laura_icon.svg", alt="icon cursor laura", class="connor-cursor cursor_2")
             .hero-face-container
-              +hero-face-container('d1443541-9e8a-58ca-f4fb-a3ecb1ce4e94', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero.png 550w', 'pem')
-              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/6012685232b8c96c56eb548a_jabri_icon.svg", data-w-id="a49b8964-40d2-e0db-b70f-16d1defdd353", alt="icon cursor jabri", class="rianne-cursor")
+              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero.png 550w', 'pem', '3')
+              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/6012685232b8c96c56eb548a_jabri_icon.svg", alt="icon cursor jabri", class="rianne-cursor cursor_3")
             .hero-face-container
-              +hero-face-container('0e5b2e6d-3d1d-7aee-f8eb-16e00aa2a975', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero.png 550w', 'laura')
-              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/60126924b4051f6dc462e834_jonathan.svg", data-w-id="c5cf7f45-8bcb-c4aa-156e-99aea05d7d13", alt="icon cursor jonathan", class="cyril-curosr")
+              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero.png 550w', 'laura', '4')
+              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/60126924b4051f6dc462e834_jonathan.svg", alt="icon cursor jonathan", class="cyril-curosr cursor_4")
             .hero-face-container
-              +hero-face-container('b3dd0e8c-35be-0f5d-064d-88f92606f871', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero.png 550w', 'jonathan')
-              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/601268954dc959629b33e852_pem_icon.svg", data-w-id="abca4747-2ee3-1463-17ae-c30c1b7b2919", alt="icon cursor pem", class="pem-cursor")
+              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero.png 550w', 'jonathan', '5')
+              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/601268954dc959629b33e852_pem_icon.svg", alt="icon cursor pem", class="pem-cursor cursor_5")
             .hero-face-container
-              +hero-face-container('391b061a-0266-01a0-a5b7-6268381f64b3', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero.png 550w', 'kate')
-              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/601268e8cffbc0e5bfc94511_mauricio.svg", data-w-id="596ce13f-0f71-87e2-210d-98555273ea22", alt="icon cursor mauricio", class="mauricio")
+              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero.png 550w', 'kate', '6')
+              img(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/601268e8cffbc0e5bfc94511_mauricio.svg", alt="icon cursor mauricio", class="mauricio cursor_6")
