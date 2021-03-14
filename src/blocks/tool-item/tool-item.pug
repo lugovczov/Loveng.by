@@ -1,0 +1,7 @@
+mixin tool-item(item)
+
+  a.tool-club(href=item.url, data-toggle="modal")
+    .tool-club-header
+      .tool-club-logo(class=item.class)
+      h6.club-title= item.title
+    .small-text= item.description

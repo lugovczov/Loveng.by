@@ -1,0 +1,16 @@
+mixin menu-dropdown-schedule
+
+  .dropdown-list.w-dropdown-list.w--open.d-none
+    .nav-column-container
+      .footer-header.green
+        .capitals.bold UX/UI Tribe
+
+      .menu-dropdown-wrapper
+        include nav-cards.data.pug
+        +nav-cards(cards)
+
+        .nav-card.tool-nav-card.w-inline-block.mt-16
+
+          include tools.data.pug
+            each tool in tools
+              +tool-item(tool)

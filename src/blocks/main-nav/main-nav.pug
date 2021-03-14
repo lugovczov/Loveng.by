@@ -17,21 +17,28 @@ mixin main-nav(selectedID)
       each menuItem in mainMenu
         +main-nav-item(selectedID, menuItem, 1)
           if (typeof(menuItem.childs) !== 'undefined' && menuItem.childs)
-            +main-nav-sublist-wrapper(2)
-              each menuItem2 in menuItem.childs
-                +main-nav-item(selectedID, menuItem2, 2)
+            if menuItem.childs == 'schedule'
+              +menu-dropdown-schedule
+            else if menuItem.childs == 'courses'
+              +menu-dropdown-courses
+
 
 mixin main-nav-item(selectedID, item, level)
   -
-    var thisLinkClass = 'ghost w-button';
+    var thisLinkClass = 'ghost w-button w-button_' + item.childs;
 
     if(level > 1) {
       thisLinkClass += '  main-nav__link--lvl-' + level;
     }
 
-  li
-    a(class= thisLinkClass, href=item.url, data-toggle="modal")= item.name
-    block
+  if item.childs
+    li(class=item.childs+'_dropdown')
+      button.dropdown-toggle.w-dropdown-toggle= item.name
+      block
+  else
+    li
+      a(class= thisLinkClass, href=item.url, data-toggle="modal")= item.name
+      block
 
 mixin main-nav-sublist-wrapper(level)
   -

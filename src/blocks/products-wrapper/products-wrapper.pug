@@ -15,13 +15,13 @@ mixin product-rating(rating)
   - var maxRating = 5
   .small-text= rating + '/' + maxRating + ' · ' + (rating / maxRating * 100) + '% completion rate'
 
-mixin products-wrapper
+mixin products-wrapper(animation)
 
   include products-wrapper.data.pug
 
     .w-layout-grid.three-column-nav
       each product in products
-        a.nav-card.w-inline-block.wow.fadeInUp(href=product.url, data-toggle="modal")
+        a.nav-card.w-inline-block(class=animation, href=product.url, data-toggle="modal")
           div(class=product.classBg + ' bootcamp-card-image nav-bootcamp card-bottom')
             .bootcamp-tools
               each tool in product.bootcampTools

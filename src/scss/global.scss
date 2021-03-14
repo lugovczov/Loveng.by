@@ -5635,7 +5635,8 @@ strong {
 .row {
   position: relative;
   padding-right: 32px;
-  padding-left: 32px
+  padding-left: 32px;
+  margin: 0;
 }
 
 .row.half-row {
@@ -10384,6 +10385,9 @@ strong {
   }
   .dropdown-toggle.w--open {
     height: 80px
+  }
+  .dropdown-list.w--open {
+    top: 98px;
   }
   .ghost {
     color: #1a222b;

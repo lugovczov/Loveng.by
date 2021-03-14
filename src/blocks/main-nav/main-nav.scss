@@ -6,7 +6,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  position: relative;
   z-index: 10;
 
   // первый уровень
@@ -164,4 +163,39 @@
       display: none;
     }
   }
+}
+
+.courses_dropdown:hover .dropdown-list,
+.schedule_dropdown:hover .dropdown-list {
+  display: block !important;
+}
+
+.menu-dropdown-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 48px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.main-nav {
+  li {
+    margin: 0;
+    align-self: center;
+    line-height: unset;
+  }
+
+  .dropdown-toggle:after {
+    display: none;
+  }
+}
+
+.dropdown-list.w--open {
+  top: 80px;
 }
