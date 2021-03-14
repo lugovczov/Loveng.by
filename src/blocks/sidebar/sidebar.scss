@@ -5,13 +5,13 @@
   left: -1000px;
   max-width: 1200px;
   transform: translateX(-1000px);
-  animation: translateClose 0.5s linear;
+  animation: translateClose 0.8s linear;
 }
 
 #sidebar.open {
   transform: translateX(0);
   left: 0;
-  animation: translateOpen 0.5s linear;
+  animation: translateOpen 0.8s linear;
 }
 
 #openSidebar,
@@ -38,5 +38,108 @@
   100% {
     transform: translateX(-1000px);
     left: -1000px;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+  #sidebar {
+    left: -750px;
+    transform: translateX(-750px);
+    animation: translateClose 0.7s linear;
+  }
+
+  #sidebar.open {
+    animation: translateOpen 0.7s linear;
+  }
+
+  @keyframes translateOpen {
+    0% {
+      transform: translateX(-750px);
+      left: -750px;
+    }
+    100% {
+      transform: translateX(-0px);
+      left: 0;
+    }
+  }
+
+  @keyframes translateClose {
+    0% {
+      transform: translateX(-0px);
+      left: 0;
+    }
+    100% {
+      transform: translateX(-750px);
+      left: -750px;
+    }
+  }
+}
+
+@media screen and (max-width:550px) {
+  #sidebar {
+    left: -550px;
+    transform: translateX(-550px);
+    animation: translateClose 0.5s linear;
+  }
+
+  #sidebar.open {
+    animation: translateOpen 0.5s linear;
+  }
+
+  @keyframes translateOpen {
+    0% {
+      transform: translateX(-550px);
+      left: -550px;
+    }
+    100% {
+      transform: translateX(-0px);
+      left: 0;
+    }
+  }
+
+  @keyframes translateClose {
+    0% {
+      transform: translateX(-0px);
+      left: 0;
+    }
+    100% {
+      transform: translateX(-550px);
+      left: -550px;
+    }
+  }
+}
+
+@media screen and (max-width:400px) {
+  #sidebar {
+    left: -450px;
+    transform: translateX(-450px);
+    animation: translateClose 0.5s linear;
+  }
+
+  #sidebar.open {
+    animation: translateOpen 0.5s linear;
+  }
+
+  @keyframes translateOpen {
+    0% {
+      transform: translateX(-450px);
+      left: -450px;
+    }
+    100% {
+      transform: translateX(-0px);
+      left: 0;
+    }
+  }
+
+  @keyframes translateClose {
+    0% {
+      transform: translateX(-0px);
+      left: 0;
+    }
+    100% {
+      transform: translateX(-450px);
+      left: -450px;
+    }
   }
 }
