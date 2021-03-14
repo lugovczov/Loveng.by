@@ -8,8 +8,8 @@ mixin section-faces-img(src, name)
 
 mixin section-faces
 
-  .container.faces.w-container.wow.fadeInUp
-    .w-layout-grid.faces-grid(style="will-change: transform; transform: translate3d(-340.112px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;")
+  #containerFaces.container.faces.w-container
+    #faces-grid.w-layout-grid.faces-grid(style="will-change: transform; transform: translate3d(-340.112px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;")
       +section-faces-img('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fe647940319_eli.jpg', 'eli')
       +section-faces-img('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f395c9402b9_pem_peace.jpg', 'pem peace')
       +section-faces-img('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9ffa93940308_laura_smile%20(1).jpg', 'laura')

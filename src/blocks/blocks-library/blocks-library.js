@@ -12,4 +12,5 @@ require('../tabs/tabs.js');
 require('../form-validation/form-validation.js');
 require('../sidebar/sidebar.js');
 require('../modal-contact-form/modal-contact-form.js');
+require('../section-faces/section-faces.js');
 require('../../js/script.js');
