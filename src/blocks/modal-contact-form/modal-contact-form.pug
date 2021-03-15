@@ -14,18 +14,24 @@ mixin modal-contact-form
           button.close.modal_close(data-dismiss="modal", aria-label="Close")
             span(aria-hidden="true") ×
 
-          form.form(method="post" action="php/feedback.php")
+          form#contactForm.form
+
+            input(type="hidden" name="project_name" value="Loveng.by")
+            input(type="hidden" name="admin_email" value="lady.savkina@mail.ru")
+            input(type="hidden" name="form_subject" value="Запрос на обратную связь")
+
 
             label.small-text(for="name") Ваше имя:
               span *
-            input.input.w-input(maxlength="256", type="text", name="name", id="name", placeholder="Иван", required)
+            input.input.w-input(maxlength="256", type="text", name="Имя", id="name", placeholder="Иван", required)
 
             label.small-text(for="mail") Ваш email:
               span *
-            input.input.w-input(maxlength="256", type="email", name="email", id="email", placeholder="ivan@petrov.com", required)
+            input.input.w-input(maxlength="256", type="email", name="E-mail", id="email", placeholder="ivan@petrov.com", required)
 
             label.small-text(for="phone") Ваш телефон:
               span *
-            input.input.w-input(maxlength="256", type="tel", name="phone", id="phone", placeholder="+375 33 123 45 67", required)
+            input.input.w-input(maxlength="256", type="tel", name="Телефон", id="phone", placeholder="+375 33 123 45 67")
 
-            input.fill.full.large.w-button(type="submit", id="submit", value="Отправить", disabled)
+            #toolTip.tool-tip(data-toggle="tooltip", data-placement="top", title="Имя и E-mail являются обязательными параметрами")
+              input.fill.full.large.w-button(type="submit", id="submit", value="Отправить", disabled)

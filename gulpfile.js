@@ -344,7 +344,7 @@ function buildJs() {
 exports.buildJs = buildJs;
 
 function buildPHP() {
-  return src(`./${dir.src}php/feedback.php`)
+  return src(`./${dir.src}php/mail.php`)
     .pipe(dest(`${dir.build}php`));
 }
 exports.buildPHP = buildPHP;

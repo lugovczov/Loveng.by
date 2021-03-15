@@ -10,3 +10,12 @@
   }
 }
 
+.tool-tip {
+  display: inline-block;
+  width: 100%;
+}
+
+.tool-tip [disabled] {
+  pointer-events: none;
+}
+
