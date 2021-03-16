@@ -10,18 +10,19 @@ mixin sidebar-column(column)
 
 mixin sidebar
 
-  #sidebar.slider
-    .slide-menu
-      .slider-header
-        +logo('/', 'navbar-logo-container w-inline-block w--current')
-          .navbar-logo-image
-          .logo-text Memorisely
-        #closeSidebar.outline.nav-outline Close
-      .slider-body
+  #sidebar
+    .slider
+      .slide-menu
+        .slider-header
+          +logo('/', 'navbar-logo-container w-inline-block w--current')
+            .navbar-logo-image
+            .logo-text Memorisely
+          #closeSidebar.outline.nav-outline Close
+        .slider-body
 
-        include sidebar.data.pug
+          include sidebar.data.pug
 
-        each column in sidebarColumns
-          +sidebar-column(column)
+          each column in sidebarColumns
+            +sidebar-column(column)
 
-        .break
+          .break
