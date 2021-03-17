@@ -3278,9 +3278,9 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3898940335_urska.jpg")
 }
 
-.testimonial-avatar.julia {
+.testimonial-avatar.savkina {
   border-color: #91ccec;
-  background-image: url("../img/avatars/julia.jpg")
+  background-image: url("../img/avatars/savkina.jpg")
 }
 
 .testimonial-avatar.alison {
@@ -4947,7 +4947,7 @@ strong {
 .about {
   position: relative;
   border-radius: 12px;
-  background-image: url("../img/girl_on_beach.JPG");
+  background-image: url("../img/girl_on_beach.jpg");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -10236,7 +10236,7 @@ strong {
   }
   .about {
     position: relative;
-    background-image: url("../img/girl_on_beach.JPG");
+    background-image: url("../img/girl_on_beach.jpg");
     background-position: 50% 50%;
     background-size: cover
   }
@@ -13384,6 +13384,16 @@ strong {
   }
   .design-team {
     display: none
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo.navbar-logo-container {
+    width: 150px;
+  }
+
+  #sidebar .slide-menu {
+    padding: 10px 15px;
   }
 }
 

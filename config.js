@@ -70,6 +70,7 @@ let config = {
     'src/img/avatars/yan.jpg': 'img/avatars',
     'src/img/avatars/oleg_2.jpg': 'img/avatars',
     'src/img/avatars/julia.jpg': 'img/avatars',
+    'src/img/avatars/savkina.jpg': 'img/avatars',
 
 
     // 'src/fonts/demo-empty-open-sans.woff2': 'fonts/',
