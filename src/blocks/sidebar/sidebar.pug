@@ -18,11 +18,17 @@ mixin sidebar
             img(src="img/logo.svg", loading="lazy", alt="логотип с текстом loveng", width=200, height=47)
 
           #closeSidebar.outline.nav-outline Закрыть
+
+        .slider-contacts
+          a.outline.nav-outline.w-button.btn-contact(href="tel:+375(29) 285-43-38") +375(29) 285-43-38
+          .phones-wrapper
+            a.btn-vb(href="viber://chat?number=375292854338")
+            a.btn-tg(href="https://telegram.me/lovengby")
+            a.btn-ws(href="https://wa.me/375292854338")
+
         .slider-body
 
           include sidebar.data.pug
 
           each column in sidebarColumns
             +sidebar-column(column)
-
-          .break

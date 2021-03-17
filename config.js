@@ -54,6 +54,10 @@ let config = {
     'src/img/logos/powerpoint_logo.svg': 'img/logos',
     'src/img/logos/miro_logo.png': 'img/logos',
     'src/img/logos/figma_logo.png': 'img/logos',
+    'src/img/logos/tg.svg': 'img/logos',
+    'src/img/logos/phone.svg': 'img/logos',
+    'src/img/logos/whatsapp.svg': 'img/logos',
+    'src/img/logos/smartphone.svg': 'img/logos',
 
     'src/img/avatars/viktoria.jpg': 'img/avatars',
     'src/img/avatars/veronika.jpg': 'img/avatars',
@@ -71,6 +75,13 @@ let config = {
     'src/img/avatars/oleg_2.jpg': 'img/avatars',
     'src/img/avatars/julia.jpg': 'img/avatars',
     'src/img/avatars/savkina.jpg': 'img/avatars',
+
+    'src/img/hero/hero_1.jpg': 'img/hero',
+    'src/img/hero/hero_2.jpg': 'img/hero',
+    'src/img/hero/hero_3.jpg': 'img/hero',
+    'src/img/hero/hero_4.jpg': 'img/hero',
+    'src/img/hero/hero_5.jpg': 'img/hero',
+    'src/img/hero/hero_6.jpg': 'img/hero',
 
 
     // 'src/fonts/demo-empty-open-sans.woff2': 'fonts/',

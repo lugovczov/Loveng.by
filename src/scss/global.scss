@@ -740,6 +740,19 @@ textarea.w-input, textarea.w-select {
   display: none !important
 }
 
+@media screen and (max-width: 1145px) {
+  .navbar-item-container .btn-contact {
+    display: block;
+    width: 44px;
+    background-image: url(../img/logos/smartphone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    border-radius: 8px;
+    font-size: 0;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px
@@ -844,6 +857,18 @@ textarea.w-input, textarea.w-select {
   }
   .w-col-small-12 {
     width: 100%
+  }
+  .slider-contacts {
+    display: block;
+  }
+
+  .slider-contacts .btn-contact {
+    background: #EEF2F2;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    height: 58px;
+    line-height: 45px;
   }
 }
 
@@ -2822,7 +2847,7 @@ strong {
 }
 
 .break {
-  width: auto;
+  width: 100%;
   height: 40px
 }
 
@@ -5065,13 +5090,18 @@ strong {
 .faces-grid {
   position: relative;
   z-index: 0;
-  min-width: 3000px;
+  //min-width: 3000px;
   margin-bottom: 24px;
   grid-column-gap: 24px;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows:auto
+}
+
+.faces-grid .memorisers-face {
+  width: 354px;
+  height: 194px;
 }
 
 .second-faces {
@@ -12349,8 +12379,9 @@ strong {
     width: 50%;
     background-color: #1a222b
   }
-  .faces-grid, .second-faces {
-    min-width: 2400px
+  .faces-grid .memorisers-face {
+    width: 279px;
+    height: 153px;
   }
   .live-block {
     position: relative
@@ -12485,6 +12516,10 @@ strong {
     padding-right: 0;
     padding-left: 0
   }
+  #sidebar {
+    padding: 0;
+    background-color: #dfdbd8;
+  }
   .slider {
     display: none;
     margin-bottom: 0;
@@ -12537,9 +12572,7 @@ strong {
     min-width: 520px
   }
   .slide-menu {
-    width: 100%;
-    height: 100%;
-    min-height: 100% !important;
+    min-height: 100vh !important;
     padding-top: 24px;
     padding-bottom: 24px;
     border-radius: 0;
@@ -13248,8 +13281,6 @@ strong {
     padding: 12px
   }
   .slide-menu {
-    width: 100%;
-    height: 100%
   }
   .next-bootcamp.pricing.checkout-price {
     max-width: 560px;
@@ -13481,4 +13512,75 @@ strong {
 .modal_close span:before,
 .modal_close span:after {
   display: none;
+}
+
+.btn-vb {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: url(../img/logos/phone.svg) #a378f1 no-repeat center;
+  border-radius: 8px;
+  background-size: 22px;
+
+  &_big {
+    width: 75px;
+  }
+}
+
+.btn-tg {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: url("../img/logos/tg.svg") #00A7E1 no-repeat center;
+  border-radius: 8px;
+  background-size: 25px;
+
+  &_big {
+    width: 75px;
+  }
+}
+
+.btn-ws {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: url("../img/logos/whatsapp.svg") #64B243 no-repeat center;
+  border-radius: 8px;
+  background-size: 25px;
+
+  &_big {
+    width: 75px;
+  }
+}
+
+.phones-wrapper {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-auto-flow: column;
+  margin-right: 8px;
+}
+
+.slider .phones-wrapper {
+  width: 100%;
+  grid-gap: 16px;
+  margin-right: 16px;
+}
+
+.slider .btn-contact {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.slider .phones-wrapper .btn-ws,
+.slider .phones-wrapper .btn-tg,
+.slider .phones-wrapper .btn-vb {
+  width: 100%;
+}
+
+.slider-contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  white-space: nowrap;
 }

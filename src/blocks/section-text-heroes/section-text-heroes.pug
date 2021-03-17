@@ -1,8 +1,7 @@
-mixin hero-face-container(src, srcSet, name, index)
+mixin hero-face-container(src, name, index)
   img(
     src=src,
     sizes="(max-width: 991px) 100vw, (max-width: 1279px) 94vw, (max-width: 1439px) 1198px, 1358px"
-    srcset=srcSet
     alt='face teacher ' + name
     class='memorisers-face ' + name + ' memorisers-face_' + index
   )
@@ -17,7 +16,7 @@ mixin section-text-heroes
       .w-layout-grid.hero-columns
         div
           h1.wow.fadeInUp.
-            Привет , мы рады видеть тебя тут !
+            Привет, мы рады видеть тебя тут !
           .large-text.wow.fadeInUp.
             Мы-платформа Loveng!  Добро пожаловать в онлайн мир качественного и интересного изучения английского языка.
           .break
@@ -26,20 +25,20 @@ mixin section-text-heroes
         .hero-wrapper
           .w-layout-grid.hero-faces
             .hero-face-container
-              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3614940369_james_hero.png 550w', 'james', '1')
+              +hero-face-container('img/hero/hero_1.jpg', 'james', '1')
               img(src="img/arrows/arrow_1.svg", alt="стрелка с текстом 'Coll!'", class="kate-cursor cursor_1")
             .hero-face-container
-              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f52e494036b_laura_hero.png 550w', 'eli', '2')
+              +hero-face-container('img/hero/hero_2.jpg', 'eli', '2')
               img(src="img/arrows/arrow_2.svg", alt="стрелка с текстом 'Современно'", class="connor-cursor cursor_2")
             .hero-face-container
-              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f68e794036a_jabri_hero.png 550w', 'pem', '3')
+              +hero-face-container('img/hero/hero_3.jpg', 'pem', '3')
               img(src="img/arrows/arrow_3.svg", alt="стрелка с текстом 'Увлекательно'", class="rianne-cursor cursor_3")
             .hero-face-container
-              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5d0a94036c_jonathan_hero.png 550w', 'laura', '4')
+              +hero-face-container('img/hero/hero_4.jpg', 'laura', '4')
               img(src="img/arrows/arrow_4.svg", alt="стрелка с текстом 'Интересно'", class="cyril-curosr cursor_4")
             .hero-face-container
-              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f412794036d_pem_hero.png 550w', 'jonathan', '5')
+              +hero-face-container('img/hero/hero_5.jpg', 'jonathan', '5')
               img(src="img/arrows/arrow_5.svg", alt="стрелка с текстом 'Я в восторге'", class="pem-cursor cursor_5")
             .hero-face-container
-              +hero-face-container('https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero.png', 'https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero-p-500.png 500w, https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f739794036e_mauricio_hero.png 550w', 'kate', '6')
+              +hero-face-container('img/hero/hero_6.jpg', 'kate', '6')
               img(src="img/arrows/arrow_6.svg", alt="стрелка с текстом 'Great!'", class="mauricio cursor_6")

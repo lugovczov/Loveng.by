@@ -12,6 +12,10 @@ mixin page-header
         block nav
           +main-nav('')
         .gap
-        button.outline.nav-outline.w-button(data-toggle="modal", data-target="#modalContactForm") Связаться с нами
+        .phones-wrapper
+          a.btn-vb(href="viber://chat?number=375292854338")
+          a.btn-tg(href="https://telegram.me/lovengby")
+          a.btn-ws(href="https://wa.me/375292854338")
+        a.outline.nav-outline.w-button.btn-contact(href="tel:+375(29) 285-43-38") +375(29) 285-43-38
 
       #openSidebar.outline.hide-desktop Меню

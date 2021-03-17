@@ -25,6 +25,17 @@ ready(function () {
   function scrollBlock(element, toRight) {
     var style = window.getComputedStyle(element);
     var matrix = new WebKitCSSMatrix(style.transform);
+
+    if (matrix.m41 > 0) {
+      element.style.transform = `translateX(-300px)`
+      return;
+    }
+
+    if ((-matrix.m41 + 300) > element.offsetWidth) {
+      element.style.transform = `translateX(-${element.offsetWidth -500}px)`
+      return;
+    }
+
     toRight ? (
       element.style.transform = `translateX(${matrix.m41 + 4}px)`
     ) : (
