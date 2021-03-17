@@ -4973,7 +4973,7 @@ strong {
   position: relative;
   border-radius: 12px;
   background-image: url("../img/girl_on_beach.jpg");
-  background-position: 50% 50%;
+  background-position: top center;
   background-size: cover
 }
 
@@ -10267,7 +10267,7 @@ strong {
   .about {
     position: relative;
     background-image: url("../img/girl_on_beach.jpg");
-    background-position: 50% 50%;
+    background-position: top center;
     background-size: cover
   }
   .disabled-text {
@@ -11962,7 +11962,11 @@ strong {
   .row.half-row {
     width: 100%;
     padding-right: 0;
-    padding-left: 0
+    padding-left: 0;
+
+    h3 {
+      word-break: break-word;
+    }
   }
   .row._100 {
     padding-right: 0;
