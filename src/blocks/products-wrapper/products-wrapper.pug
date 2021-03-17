@@ -13,7 +13,7 @@ mixin bootcamp-tool(className, src, sizes, alt, count)
 
 mixin product-rating(rating)
   - var maxRating = 5
-  .small-text= rating + '/' + maxRating + ' · ' + (rating / maxRating * 100) + '% completion rate'
+  .small-text= rating + '/' + maxRating + ' · ' + (rating / maxRating * 100) + '% завершения курса'
 
 mixin products-wrapper(animation)
 
@@ -36,4 +36,4 @@ mixin products-wrapper(animation)
             .full-line
             .small-text= product.description
             .small-break
-            div(class=product.btnClass) View Bootcamp
+            div(class=product.btnClass) Присоединиться к курсу

@@ -2122,7 +2122,7 @@ strong {
 }
 
 .container.promo-image.likeminded {
-  background-image: linear-gradient(315deg, rgba(10, 37, 64, .6), hsla(0, 0%, 100%, .2) 72%), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fb1929402a8_haq.jpg");
+  background-image: linear-gradient(315deg, rgba(10, 37, 64, .6), hsla(0, 0%, 100%, .2) 72%), url("../img/girl_in_museum.jpg");
   background-position: 0 0, 50% 100%
 }
 
@@ -2142,7 +2142,7 @@ strong {
 .container.promo-image {
   height: 640px;
   margin-top: 0;
-  background-image: linear-gradient(315deg, rgba(0, 0, 0, .4) 36%, hsla(0, 0%, 100%, .2)), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
+  background-image: linear-gradient(315deg, rgba(0, 0, 0, .4) 36%, hsla(0, 0%, 100%, .2)), url("../img/mountains.jpg");
   background-position: 0 0, 50% 50%;
   background-size: auto, cover
 }
@@ -2946,17 +2946,39 @@ strong {
   filter: brightness(105%)
 }
 
-.bootcamp-card-image.nav-bootcamp.ds {
+.bootcamp-card-image.nav-bootcamp.service_1 {
   border-radius: 12px;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3295940245_IMG_1788%20(1).jpg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3295940245_IMG_1788%20(1).jpg"), linear-gradient(180deg, transparent, transparent);
+  background-image: url("../img/services/service_1.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/services/service_1.png"), linear-gradient(180deg, transparent, transparent);
   background-position: 50% 50%, 0 0;
   -webkit-transition: -webkit-filter .2s;
   transition: filter .2s;
   transition: filter .2s, -webkit-filter .2s
 }
 
-.bootcamp-card-image.nav-bootcamp.ds:hover {
+.bootcamp-card-image.nav-bootcamp.service_2 {
+  border-radius: 12px;
+  background-image: url("../img/services/service_2.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/services/service_2.png"), linear-gradient(180deg, transparent, transparent);
+  background-position: 50% 50%, 0 0;
+  -webkit-transition: -webkit-filter .2s;
+  transition: filter .2s;
+  transition: filter .2s, -webkit-filter .2s
+}
+
+.bootcamp-card-image.nav-bootcamp.service_3 {
+  border-radius: 12px;
+  background-image: url("../img/services/service_3.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/services/service_3.png"), linear-gradient(180deg, transparent, transparent);
+  background-position: 50% 50%, 0 0;
+  -webkit-transition: -webkit-filter .2s;
+  transition: filter .2s;
+  transition: filter .2s, -webkit-filter .2s
+}
+
+.bootcamp-card-image.nav-bootcamp.service_3:hover,
+.bootcamp-card-image.nav-bootcamp.service_2:hover,
+.bootcamp-card-image.nav-bootcamp.service_1:hover {
   -webkit-filter: brightness(105%);
   filter: brightness(105%)
 }
@@ -2978,8 +3000,8 @@ strong {
 
 .bootcamp-card-image.nav-bootcamp.part-time {
   border-radius: 12px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
-  background-image: linear-gradient(180deg, transparent, transparent), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/mountains.jpg");
+  background-image: linear-gradient(180deg, transparent, transparent), url("../img/mountains.jpg");
   background-size: auto, cover;
   -webkit-transition: -webkit-filter .2s;
   transition: filter .2s;
@@ -3017,6 +3039,34 @@ strong {
   background-image: linear-gradient(180deg, transparent, transparent), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fdec894037e_pencil.png");
   background-position: 0 0, 50% 0;
   background-size: auto, cover
+}
+
+.bootcamp-card-image.nav-bootcamp.part-time.club {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/community/club.jpg");
+  background-image: linear-gradient(180deg, transparent, transparent), url("../img/community/club.jpg")
+}
+
+.bootcamp-card-image.nav-bootcamp.part-time.show {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/community/show.jpg");
+  background-image: linear-gradient(180deg, transparent, transparent), url("../img/community/show.jpg")
+}
+
+.bootcamp-card-image.nav-bootcamp.part-time.fly {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/community/fly.jpg");
+  background-image: linear-gradient(180deg, transparent, transparent), url("../img/community/fly.jpg")
+}
+
+.bootcamp-card-image.nav-bootcamp.part-time.faq {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/community/faq.jpg");
+  background-image: linear-gradient(180deg, transparent, transparent), url("../img/community/faq.jpg")
+}
+
+.bootcamp-card-image.nav-bootcamp.part-time.show:hover,
+.bootcamp-card-image.nav-bootcamp.part-time.fly:hover,
+.bootcamp-card-image.nav-bootcamp.part-time.faq:hover,
+.bootcamp-card-image.nav-bootcamp.part-time.club:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%)
 }
 
 .bootcamp-card-image.nav-bootcamp.card-bottom {
@@ -3120,9 +3170,9 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fb9c694022b_mateen%20(1).jpg")
 }
 
-.testimonial-avatar.hadria {
+.testimonial-avatar.natali_4 {
   border-color: #eabebe;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f888094022d_hadria.jpg")
+  background-image: url("../img/avatars/natali_4.jpg")
 }
 
 .testimonial-avatar.james {
@@ -3135,9 +3185,9 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f7219940236_blake_tribe.jpeg")
 }
 
-.testimonial-avatar.laura {
+.testimonial-avatar.natali_5 {
   border-color: #91ccec;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3084940229_laura.jpg")
+  background-image: url("../img/avatars/natali_5.jpg")
 }
 
 .testimonial-avatar.terence {
@@ -3155,9 +3205,9 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f8fa5940237_kate.jpg")
 }
 
-.testimonial-avatar.james-tribe {
+.testimonial-avatar.oleg_2 {
   border-color: #ccdaa0;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f8662940243_james_tribe.jpg")
+  background-image: url("../img/avatars/oleg_2.jpg")
 }
 
 .testimonial-avatar.uche {
@@ -3228,9 +3278,19 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3898940335_urska.jpg")
 }
 
+.testimonial-avatar.julia {
+  border-color: #91ccec;
+  background-image: url("../img/avatars/julia.jpg")
+}
+
 .testimonial-avatar.alison {
   border-color: #eabebe;
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f08b994030e_alison.jpg")
+}
+
+.testimonial-avatar.ornella {
+  border-color: #eabebe;
+  background-image: url("../img/avatars/ornella.jpg")
 }
 
 .testimonial-avatar.james-w {
@@ -3247,6 +3307,11 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f2d5994033a_charbel.jpg")
 }
 
+.testimonial-avatar.yana {
+  border-color: #ccdaa0;
+  background-image: url("../img/avatars/yana.jpg")
+}
+
 .testimonial-avatar.salem {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f8545940344_salem.jpg")
 }
@@ -3256,9 +3321,19 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/602b9659bff7fd30be8b9a83_farah_avatar.jpg")
 }
 
+.testimonial-avatar.yan {
+  border-color: #ccdaa0;
+  background-image: url("../img/avatars/yan.jpg")
+}
+
 .testimonial-avatar.ian {
   border-color: #91ccec;
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/602b977e9e68c45fe9623086_ian_avatar.jpg")
+}
+
+.testimonial-avatar.viktoria {
+  border-color: #d5d1c4;
+  background-image: url("../img/avatars/viktoria.jpg")
 }
 
 .testimonial-avatar.caitlyn {
@@ -3270,9 +3345,19 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/602b995362d589f421eee701_clark_avatar.jpg")
 }
 
+.testimonial-avatar.natali_3 {
+  border-color: #f9c5b9;
+  background-image: url("../img/avatars/natali_3.jpg")
+}
+
 .testimonial-avatar.jhoza {
   border-color: #eb85a7;
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/602b9a40c40a3d23032cb787_jhoza.jpg")
+}
+
+.testimonial-avatar.natali_2 {
+  border-color: #eb85a7;
+  background-image: url("../img/avatars/natali_2.jpg")
 }
 
 .testimonial-avatar.chris {
@@ -3280,9 +3365,19 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/6035f4b1ff13096557f67992_chris.png")
 }
 
+.testimonial-avatar.olya {
+  border-color: #ccdaa0;
+  background-image: url("../img/avatars/olya.jpg")
+}
+
 .testimonial-avatar.liza {
   border-color: #0a2540;
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/6035f530542efb01c4034377_liza.png")
+}
+
+.testimonial-avatar.natali {
+  border-color: #0a2540;
+  background-image: url("../img/avatars/natali.jpg")
 }
 
 .testimonial-avatar.alina {
@@ -3301,14 +3396,29 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/603ca721826fa00cb0b79b78_andressa.jpg")
 }
 
+.testimonial-avatar.slava {
+  border-color: #91ccec;
+  background-image: url("../img/avatars/slava.jpg")
+}
+
 .testimonial-avatar.pg {
   border-color: #eabebe;
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/603ca7db966471c37bdf5bf4_pg.jpg")
 }
 
+.testimonial-avatar.veronika {
+  border-color: #eabebe;
+  background-image: url("../img/avatars/veronika.jpg")
+}
+
 .testimonial-avatar.jeff {
   border-color: #91ccec;
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/603ca844b89ce98216724bb4_jeff.jpg")
+}
+
+.testimonial-avatar.oleg {
+  border-color: #91ccec;
+  background-image: url("../img/avatars/oleg.jpg")
 }
 
 .testimonial-avatar.casandra {
@@ -3318,6 +3428,11 @@ strong {
 .testimonial-avatar.rianne {
   border-color: #d5d1c4;
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/603caa9a7fb08efe31457e73_rianne.jpg")
+}
+
+.testimonial-avatar.viktoria {
+  border-color: #d5d1c4;
+  background-image: url("../img/avatars/viktoria.jpg")
 }
 
 .small-text {
@@ -3647,7 +3762,7 @@ strong {
 }
 
 .card-tool.card-overlap.nav-tool.miro {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5c86940313_miro_logo.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: none
@@ -3660,7 +3775,7 @@ strong {
 }
 
 .card-tool.card-overlap.miro {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5c86940313_miro_logo.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: -1px -1px 2px 0 hsla(0, 0%, 100%, .5), 1px 1px 2px 0 rgba(0, 0, 0, .1)
@@ -3718,9 +3833,29 @@ strong {
 }
 
 .card-tool.nav-tool.miro {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5c86940313_miro_logo.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover
+}
+
+.card-tool.nav-tool.zoom {
+  background-image: url("../img/logos/zoom_logo.svg");
+  background-position: 50% 50%;
+  background-size: cover
+}
+
+.card-tool.nav-tool.powerpoint {
+  background-image: url("../img/logos/powerpoint_logo.svg");
+  background-position: 50% 50%;
+  background-size: 28px;
+  background-repeat: no-repeat;
+}
+
+.card-tool.nav-tool.figma {
+  background-image: url("../img/logos/figma_logo.png");
+  background-position: 50% 50%;
+  background-size: 28px;
+  background-repeat: no-repeat;
 }
 
 .card-tool.connor {
@@ -4707,7 +4842,7 @@ strong {
 }
 
 .bootcamp-hero-image.part-time {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg")
+  background-image: url("../img/mountains.jpg")
 }
 
 .bootcamp-hero-image.crawf {
@@ -4812,7 +4947,7 @@ strong {
 .about {
   position: relative;
   border-radius: 12px;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f12df9402dd_pem_zander.jpg");
+  background-image: url("../img/girl_on_beach.JPG");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -4857,7 +4992,7 @@ strong {
 }
 
 .div-block-8.remote {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg")
+  background-image: url("../img/mountains.jpg")
 }
 
 .inline-image {
@@ -4899,7 +5034,7 @@ strong {
   height: 640px;
   margin-top: 0;
   border-radius: 12px;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fb1929402a8_haq.jpg");
+  background-image: url("../img/girl_in_museum.jpg");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -5045,10 +5180,10 @@ strong {
 
 .cyril-curosr {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 20px;
+  top: 0;
   z-index: 0;
-  width: 110px;
+  width: 120px;
   max-width: none
 }
 
@@ -5060,19 +5195,19 @@ strong {
 
 .rianne-cursor {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: -30px;
+  top: -25px;
   z-index: 0;
-  width: 90px;
+  width: 140px;
   max-width: none
 }
 
 .connor-cursor {
   position: absolute;
-  left: 10px;
+  left: 70px;
   top: 10px;
   z-index: 0;
-  width: 94px;
+  width: 140px;
   max-width: none
 }
 
@@ -6150,7 +6285,7 @@ strong {
 
 .card-logo.miro-logo {
   background-color: #ffc530;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5c86940313_miro_logo.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -7019,14 +7154,14 @@ strong {
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fdca39401fc_figma_logo.png");
+  background-image: url("../img/logos/figma_logo.png");
   background-position: 50% 50%;
   background-size: 20px 20px;
   background-repeat: no-repeat
 }
 
 .inline-tool.miro {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f08e09401f4_logo_miro.png")
+  background-image: url("../img/logos/miro_logo.png")
 }
 
 .inline-tool.notion {
@@ -7185,7 +7320,7 @@ strong {
 }
 
 .tool-oval.miro {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5c86940313_miro_logo.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -7326,16 +7461,16 @@ strong {
 
 .pem-cursor {
   position: absolute;
-  left: 10px;
-  top: 10px;
-  width: 89px
+  left: -40px;
+  top: 0px;
+  width: 149px;
 }
 
 .mauricio {
   position: absolute;
-  left: 10px;
-  top: 10px;
-  width: 99px
+  left: 90px;
+  top: -50px;
+  width: 99px;
 }
 
 .live-dot {
@@ -7608,7 +7743,7 @@ strong {
 
 .card-logo-2.miro-logo {
   background-color: #ffc530;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5c86940313_miro_logo.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -8513,7 +8648,7 @@ strong {
 }
 
 .workshop-icon.miro-icon {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f08e09401f4_logo_miro.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -8964,7 +9099,7 @@ strong {
 }
 
 .card-tool-3.nav-tool.miro {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f5c86940313_miro_logo.png");
+  background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -9638,11 +9773,11 @@ strong {
 }
 
 .tool-club-logo.figma-logo {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fdca39401fc_figma_logo.png")
+  background-image: url("../img/logos/figma_logo.png")
 }
 
 .tool-club-logo.miro-logo {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f08e09401f4_logo_miro.png")
+  background-image: url("../img/logos/miro_logo.png")
 }
 
 .tool-club-header {
@@ -9829,7 +9964,7 @@ strong {
     font-family: 'Sf pro text', sans-serif
   }
   .container.promo-image.design-system {
-    background-image: linear-gradient(315deg, rgba(10, 37, 64, .6), hsla(0, 0%, 100%, .2) 72%), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg")
+    background-image: linear-gradient(315deg, rgba(10, 37, 64, .6), hsla(0, 0%, 100%, .2) 72%), url("../img/mountains.jpg")
   }
   .container.sticky {
     position: relative
@@ -10101,7 +10236,7 @@ strong {
   }
   .about {
     position: relative;
-    background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f12df9402dd_pem_zander.jpg");
+    background-image: url("../img/girl_on_beach.JPG");
     background-position: 50% 50%;
     background-size: cover
   }
@@ -10657,7 +10792,7 @@ strong {
     background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f6b4f940249_IMG_2649%20(1).jpg")
   }
   .bootcamp-hero-image.haq.questions {
-    background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fb1929402a8_haq.jpg")
+    background-image: url("../img/girl_in_museum.jpg")
   }
   .curriculum {
     border-left-color: #d5d1c4
@@ -11355,8 +11490,8 @@ strong {
     line-height: 72px
   }
   .container.promo-image.design-system {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(31, 34, 37, .8)), color-stop(96%, hsla(0, 0%, 100%, .2)), color-stop(104%, hsla(0, 0%, 100%, .2))), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
-    background-image: linear-gradient(0deg, rgba(31, 34, 37, .8), hsla(0, 0%, 100%, .2) 96%, hsla(0, 0%, 100%, .2) 104%), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(31, 34, 37, .8)), color-stop(96%, hsla(0, 0%, 100%, .2)), color-stop(104%, hsla(0, 0%, 100%, .2))), url("../img/mountains.jpg");
+    background-image: linear-gradient(0deg, rgba(31, 34, 37, .8), hsla(0, 0%, 100%, .2) 96%, hsla(0, 0%, 100%, .2) 104%), url("../img/mountains.jpg");
     background-position: 0 0, 50% 50%;
     background-size: auto, cover
   }
@@ -11369,8 +11504,8 @@ strong {
   }
   .container.promo-image {
     border-radius: 12px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 43, 43, .8)), color-stop(96%, hsla(0, 0%, 100%, .2)), color-stop(104%, hsla(0, 0%, 100%, .2))), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
-    background-image: linear-gradient(0deg, rgba(43, 43, 43, .8), hsla(0, 0%, 100%, .2) 96%, hsla(0, 0%, 100%, .2) 104%), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 43, 43, .8)), color-stop(96%, hsla(0, 0%, 100%, .2)), color-stop(104%, hsla(0, 0%, 100%, .2))), url("../img/mountains.jpg");
+    background-image: linear-gradient(0deg, rgba(43, 43, 43, .8), hsla(0, 0%, 100%, .2) 96%, hsla(0, 0%, 100%, .2) 104%), url("../img/mountains.jpg");
     background-position: 0 0, 50% 50%;
     background-size: auto, cover
   }
@@ -12649,8 +12784,8 @@ strong {
   }
   .container.promo-image {
     border-radius: 0;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(26, 34, 43, .5)), to(rgba(0, 0, 0, .2))), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
-    background-image: linear-gradient(0deg, rgba(26, 34, 43, .5), rgba(0, 0, 0, .2)), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f808b94032f_career_hero%20(1).jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(26, 34, 43, .5)), to(rgba(0, 0, 0, .2))), url("../img/mountains.jpg");
+    background-image: linear-gradient(0deg, rgba(26, 34, 43, .5), rgba(0, 0, 0, .2)), url("../img/mountains.jpg");
     background-position: 0 0, 26% 63%;
     background-size: auto, cover
   }

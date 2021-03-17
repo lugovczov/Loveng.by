@@ -15,9 +15,9 @@ mixin sidebar
       .slide-menu
         .slider-header
           +logo('/', 'navbar-logo-container w-inline-block w--current')
-            .navbar-logo-image
-            .logo-text Memorisely
-          #closeSidebar.outline.nav-outline Close
+            img(src="img/logo.svg", loading="lazy", alt="логотип с текстом loveng", width=200, height=47)
+
+          #closeSidebar.outline.nav-outline Закрыть
         .slider-body
 
           include sidebar.data.pug

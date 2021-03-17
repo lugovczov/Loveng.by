@@ -2,9 +2,9 @@ mixin review-item(item)
 
   .testimonial.wow.fadeInUp
     .testimonial-header.wow.fadeInUp
-      div(class=item.name.toLowerCase() + ' testimonial-avatar')
+      div(class=item.avatar + ' testimonial-avatar')
       .avatar-text-container
         .regular-text.black= item.name
-        .small-text= item.position + ' · ' + item.country
+        .small-text= item.position
     .testimonial-body
       .regular-text.wow.fadeInUp= item.text

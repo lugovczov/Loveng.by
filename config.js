@@ -27,7 +27,51 @@ let config = {
     './script.js',
   ],
   'addAssets': {
-    'src/img/demo-*.{png,svg,jpg,jpeg}': 'img/',
+    'src/img/logo.svg': 'img/',
+    'src/img/icon.svg': 'img/',
+
+    'src/img/services/service_1.png': 'img/services',
+    'src/img/services/service_2.png': 'img/services',
+    'src/img/services/service_3.png': 'img/services',
+
+    'src/img/girl_in_museum.jpg': 'img/',
+    'src/img/girl_on_beach.jpg': 'img/',
+    'src/img/mountains.jpg': 'img/',
+
+    'src/img/community/show.jpg': 'img/community',
+    'src/img/community/fly.jpg': 'img/community',
+    'src/img/community/club.jpg': 'img/community',
+    'src/img/community/faq.jpg': 'img/community',
+
+    'src/img/arrows/arrow_1.svg': 'img/arrows',
+    'src/img/arrows/arrow_2.svg': 'img/arrows',
+    'src/img/arrows/arrow_3.svg': 'img/arrows',
+    'src/img/arrows/arrow_4.svg': 'img/arrows',
+    'src/img/arrows/arrow_5.svg': 'img/arrows',
+    'src/img/arrows/arrow_6.svg': 'img/arrows',
+
+    'src/img/logos/zoom_logo.svg': 'img/logos',
+    'src/img/logos/powerpoint_logo.svg': 'img/logos',
+    'src/img/logos/miro_logo.png': 'img/logos',
+    'src/img/logos/figma_logo.png': 'img/logos',
+
+    'src/img/avatars/viktoria.jpg': 'img/avatars',
+    'src/img/avatars/veronika.jpg': 'img/avatars',
+    'src/img/avatars/oleg.jpg': 'img/avatars',
+    'src/img/avatars/slava.jpg': 'img/avatars',
+    'src/img/avatars/olya.jpg': 'img/avatars',
+    'src/img/avatars/natali.jpg': 'img/avatars',
+    'src/img/avatars/natali_2.jpg': 'img/avatars',
+    'src/img/avatars/natali_3.jpg': 'img/avatars',
+    'src/img/avatars/natali_4.jpg': 'img/avatars',
+    'src/img/avatars/natali_5.jpg': 'img/avatars',
+    'src/img/avatars/ornella.jpg': 'img/avatars',
+    'src/img/avatars/yana.jpg': 'img/avatars',
+    'src/img/avatars/yan.jpg': 'img/avatars',
+    'src/img/avatars/oleg_2.jpg': 'img/avatars',
+    'src/img/avatars/julia.jpg': 'img/avatars',
+
+
     // 'src/fonts/demo-empty-open-sans.woff2': 'fonts/',
     // 'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
     // 'node_modules/somePackage/images/*.{png,svg,jpg,jpeg}': 'img/',

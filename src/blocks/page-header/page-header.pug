@@ -5,14 +5,13 @@ mixin page-header
   .navbar.full-bar
     .navbar-marketing
       +logo('/', 'navbar-logo-container w-inline-block w--current')
-        .navbar-logo-image
-        .logo-text Memorisely
+        img(src="img/logo.svg", loading="lazy", alt="логотип с текстом loveng", width=200, height=47)
 
       .navbar-item-container
         +live-dot
         block nav
           +main-nav('')
         .gap
-        button.outline.nav-outline.w-button(data-toggle="modal", data-target="#modalInDev") Посмотреть учебные курсы
+        button.outline.nav-outline.w-button(data-toggle="modal", data-target="#modalContactForm") Связаться с нами
 
-      #openSidebar.outline.hide-desktop Menu
+      #openSidebar.outline.hide-desktop Меню

@@ -4,7 +4,10 @@ mixin footer-column(column)
       .capitals= column.title
     each link in column.links
       .footer-link
-        a(href= link.url, data-toggle="modal")= link.title
+        if (link.noModal)
+          a(href= link.url)= link.title
+        else
+          a(href= link.url, data-toggle="modal")= link.title
         if link.notify
           .notify
             span= link.notify
@@ -19,11 +22,10 @@ mixin page-footer()
         .w-layout-grid.footer-grid
           div
             +logo('/', 'navbar-logo-container footer-logo w-inline-block')
-              .navbar-logo-image
-              .logo-text Memorisely
+              img(src="img/logo.svg", loading="lazy", alt="логотип с текстом loveng", width=200, height=47)
             .break
             div
-              strong.bold-text-3 © Memorisely Ltd 2020
+              strong.bold-text-3 © Loveng Ltd 2021
               <br>
               a.small-link(href="#modalInDev", data-toggle="modal") Terms
               span.mr-1.ml-1 &amp;
