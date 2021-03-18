@@ -59,6 +59,13 @@ let config = {
     'src/img/logos/phone.svg': 'img/logos',
     'src/img/logos/whatsapp.svg': 'img/logos',
     'src/img/logos/smartphone.svg': 'img/logos',
+    'src/img/logos/star.svg': 'img/logos',
+    'src/img/logos/amazon_logo.jpg': 'img/logos',
+    'src/img/logos/google_logo.jpg': 'img/logos',
+    'src/img/logos/miscrosoft_logo.jpg': 'img/logos',
+    'src/img/logos/revolut_logo.jpg': 'img/logos',
+    'src/img/logos/uber_logo.jpg': 'img/logos',
+    'src/img/logos/salesforce_logo.jpg': 'img/logos',
 
     'src/img/avatars/viktoria.jpg': 'img/avatars',
     'src/img/avatars/veronika.jpg': 'img/avatars',

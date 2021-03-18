@@ -2,9 +2,9 @@ mixin bootcamp-tool(className, src, sizes, alt, count)
   if src
     div(class=className)
       if sizes
-        img.card-tool-logo(src=src, alt=alt, sizes=sizes)
+        img.card-tool-logo(src=src, alt=alt, sizes=sizes, loading="lazy")
       else
-        img.card-tool-logo(src=src, alt=alt)
+        img.card-tool-logo(src=src, alt=alt, loading="lazy")
   else if count
     div(class=className)= count
   else
@@ -28,7 +28,7 @@ mixin products-wrapper(animation)
                 +bootcamp-tool(tool.className, tool.src, tool.sizes, tool.alt, tool.count)
           .card-body
             .inline
-              img.stars(src="https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f9bd5f9acf2ce621f065eaf_RED_STAR.svg", alt="stars for rating", loading="lazy")
+              img.stars(src="img/logos/star.svg", alt="stars for rating", loading="lazy")
               +product-rating(product.rating)
             .tiny-break
             h6= product.title
