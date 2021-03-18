@@ -19,7 +19,7 @@ ready(function () {
         scrollBlock(facesGrid);
       }
       prevScrollPosition = course;
-    });
+    }, {passive: true});
   };
 
   function scrollBlock(element, toRight) {

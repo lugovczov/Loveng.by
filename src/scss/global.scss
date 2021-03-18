@@ -2162,6 +2162,9 @@ strong {
   background-position: 0 0, 50% 100%
 }
 
+.webp_supported .container.promo-image.likeminded {
+  background-image: linear-gradient(315deg, rgba(10, 37, 64, .6), hsla(0, 0%, 100%, .2) 72%), url("../img/girl_in_museum.webp");}
+
 .container.faces {
   display: none
 }
@@ -2969,8 +2972,6 @@ strong {
   height: 200px;
   margin-bottom: 0;
   border-radius: 12px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f6b4f940249_IMG_2649%20(1).jpg");
-  background-image: linear-gradient(180deg, transparent, transparent), url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f6b4f940249_IMG_2649%20(1).jpg");
   background-position: 0 0, 50% 50%;
   -webkit-transition: -webkit-filter .2s;
   transition: filter .2s;
@@ -2992,6 +2993,11 @@ strong {
   transition: filter .2s, -webkit-filter .2s
 }
 
+.webp_supported .bootcamp-card-image.nav-bootcamp.service_1 {
+  background-image: url("../img/services/service_1.webp"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/services/service_1.webp"), linear-gradient(180deg, transparent, transparent);
+}
+
 .bootcamp-card-image.nav-bootcamp.service_2 {
   border-radius: 12px;
   background-image: url("../img/services/service_2.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
@@ -3002,6 +3008,11 @@ strong {
   transition: filter .2s, -webkit-filter .2s
 }
 
+.webp_supported .bootcamp-card-image.nav-bootcamp.service_2 {
+  background-image: url("../img/services/service_2.webp"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/services/service_2.webp"), linear-gradient(180deg, transparent, transparent);
+}
+
 .bootcamp-card-image.nav-bootcamp.service_3 {
   border-radius: 12px;
   background-image: url("../img/services/service_3.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
@@ -3010,6 +3021,11 @@ strong {
   -webkit-transition: -webkit-filter .2s;
   transition: filter .2s;
   transition: filter .2s, -webkit-filter .2s
+}
+
+.webp_supported .bootcamp-card-image.nav-bootcamp.service_3 {
+  background-image: url("../img/services/service_3.webp"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/services/service_3.webp"), linear-gradient(180deg, transparent, transparent);
 }
 
 .bootcamp-card-image.nav-bootcamp.service_3:hover,
@@ -5073,6 +5089,10 @@ strong {
   background-image: url("../img/girl_in_museum.jpg");
   background-position: 50% 50%;
   background-size: cover
+}
+
+.webp_supported .haq {
+  background-image: url("../img/girl_in_museum.webp");
 }
 
 .haq.friends {
@@ -10835,6 +10855,9 @@ strong {
   .bootcamp-hero-image.haq.questions {
     background-image: url("../img/girl_in_museum.jpg")
   }
+  .webp_supported .bootcamp-hero-image.haq.questions {
+    background-image: url("../img/girl_in_museum.webp");
+  }
   .curriculum {
     border-left-color: #d5d1c4
   }
@@ -11536,6 +11559,10 @@ strong {
     background-position: 0 0, 50% 50%;
     background-size: auto, cover
   }
+  .webp_supported .container.promo-image.design-system {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(31, 34, 37, .8)), color-stop(96%, hsla(0, 0%, 100%, .2)), color-stop(104%, hsla(0, 0%, 100%, .2))), url("../img/mountains.webp");
+    background-image: linear-gradient(0deg, rgba(31, 34, 37, .8), hsla(0, 0%, 100%, .2) 96%, hsla(0, 0%, 100%, .2) 104%), url("../img/mountains.webp");
+  }
   .container.faces {
     position: relative;
     display: -webkit-box;
@@ -11549,6 +11576,10 @@ strong {
     background-image: linear-gradient(0deg, rgba(43, 43, 43, .8), hsla(0, 0%, 100%, .2) 96%, hsla(0, 0%, 100%, .2) 104%), url("../img/mountains.jpg");
     background-position: 0 0, 50% 50%;
     background-size: auto, cover
+  }
+  .webp_supported .container.promo-image {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 43, 43, .8)), color-stop(96%, hsla(0, 0%, 100%, .2)), color-stop(104%, hsla(0, 0%, 100%, .2))), url("../img/mountains.webp");
+    background-image: linear-gradient(0deg, rgba(43, 43, 43, .8), hsla(0, 0%, 100%, .2) 96%, hsla(0, 0%, 100%, .2) 104%), url("../img/mountains.webp");
   }
   .navbar {
     padding-right: 40px;
@@ -12829,6 +12860,10 @@ strong {
     background-position: 0 0, 26% 63%;
     background-size: auto, cover
   }
+  .webp_supported .container.promo-image {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(26, 34, 43, .5)), to(rgba(0, 0, 0, .2))), url("../img/mountains.webp");
+    background-image: linear-gradient(0deg, rgba(26, 34, 43, .5), rgba(0, 0, 0, .2)), url("../img/mountains.webp");
+  }
   .container.sticky {
     overflow: hidden
   }
@@ -13499,13 +13534,13 @@ strong {
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Sf pro text';
-  src: url('../fonts/SF-Pro-Text-Semibold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+//@font-face {
+//  font-family: 'Sf pro text';
+//  src: url('../fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+//  font-weight: 600;
+//  font-style: normal;
+//  font-display: swap;
+//}
 
 .modal_close span {
   position: relative !important;
@@ -13590,4 +13625,33 @@ strong {
   align-items: center;
   flex-direction: row-reverse;
   white-space: nowrap;
+}
+
+.webp_supported {
+  .about {
+    background-image: url("../img/girl_on_beach.webp");
+  }
+
+  .container.promo-image {
+    background-image: linear-gradient(315deg, rgba(0, 0, 0, .4) 36%, hsla(0, 0%, 100%, .2)), url("../img/mountains.webp");
+  }
+
+  .bootcamp-card-image.nav-bootcamp.part-time {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/mountains.webp");
+    background-image: linear-gradient(180deg, transparent, transparent), url("../img/mountains.webp");
+  }
+
+  .bootcamp-card-image.nav-bootcamp.part-time {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/mountains.webp");
+    background-image: linear-gradient(180deg, transparent, transparent), url("../img/mountains.webp");
+  }
+
+  .div-block-8.remote,
+  .bootcamp-hero-image.part-time {
+    background-image: url("../img/mountains.webp")
+  }
+
+  .container.promo-image.design-system {
+    background-image: linear-gradient(315deg, rgba(10, 37, 64, .6), hsla(0, 0%, 100%, .2) 72%), url("../img/mountains.webp")
+  }
 }

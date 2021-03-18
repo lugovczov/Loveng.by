@@ -32,12 +32,18 @@ let config = {
     'src/img/icon.svg': 'img/',
 
     'src/img/services/service_1.png': 'img/services',
+    'src/img/services/service_1.webp': 'img/services',
     'src/img/services/service_2.png': 'img/services',
+    'src/img/services/service_2.webp': 'img/services',
     'src/img/services/service_3.png': 'img/services',
+    'src/img/services/service_3.webp': 'img/services',
 
     'src/img/girl_in_museum.jpg': 'img/',
+    'src/img/girl_in_museum.webp': 'img/',
     'src/img/girl_on_beach.jpg': 'img/',
+    'src/img/girl_on_beach.webp': 'img/',
     'src/img/mountains.jpg': 'img/',
+    'src/img/mountains.webp': 'img/',
 
     'src/img/community/show.jpg': 'img/community',
     'src/img/community/fly.jpg': 'img/community',
@@ -85,11 +91,17 @@ let config = {
     'src/img/avatars/savkina.jpg': 'img/avatars',
 
     'src/img/hero/hero_1.jpg': 'img/hero',
+    'src/img/hero/hero_1.webp': 'img/hero',
     'src/img/hero/hero_2.jpg': 'img/hero',
+    'src/img/hero/hero_2.webp': 'img/hero',
     'src/img/hero/hero_3.jpg': 'img/hero',
+    'src/img/hero/hero_3.webp': 'img/hero',
     'src/img/hero/hero_4.jpg': 'img/hero',
+    'src/img/hero/hero_4.webp': 'img/hero',
     'src/img/hero/hero_5.jpg': 'img/hero',
+    'src/img/hero/hero_5.webp': 'img/hero',
     'src/img/hero/hero_6.jpg': 'img/hero',
+    'src/img/hero/hero_6.webp': 'img/hero',
 
     // fonts
     'src/fonts/Formular-Bold.woff': 'fonts/',

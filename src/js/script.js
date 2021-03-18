@@ -14,6 +14,23 @@ import ready from 'Utils/documentReady.js';
 //   console.log('jQuery героически сработал!');
 // });
 
-ready(
-  new WOW().init()
-)
+ready(function() {
+  new WOW().init();
+})
+
+const ThisIsWebP = function () {
+  var def = $.Deferred(), crimg = new Image();
+  crimg.onload = function() { def.resolve(); };
+  crimg.onerror = function() {def.reject(); };
+  crimg.src = "https://simpl.info/webp/cherry.webp";
+  return def.promise();
+};
+
+ThisIsWebP().then(function() {
+  document.body.classList.add('webp_supported');
+}, function() {
+  document.body.classList.remove('webp_supported');
+});
+
+
+

@@ -1,18 +1,20 @@
 mixin section-faces-img(src, name)
-  img(
-    src=src
-    alt="face teacher" + name
-    class="memorisers-face"
-    loading="lazy"
-  )
+  picture
+    source(type="image/webp", srcset=src_webp)
+    img(
+      src=src
+      alt="face teacher" + name
+      class="memorisers-face"
+      loading="lazy"
+    )
 
 mixin section-faces
 
   #containerFaces.container.faces.w-container
     #faces-grid.w-layout-grid.faces-grid(style="will-change: transform; transform: translate3d(-340.112px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;")
-      +section-faces-img('img/hero/hero_1.jpg', 'eli')
-      +section-faces-img('img/hero/hero_2.jpg', 'pem peace')
-      +section-faces-img('img/hero/hero_3.jpg', 'laura')
-      +section-faces-img('img/hero/hero_4.jpg', 'tom')
-      +section-faces-img('img/hero/hero_5.jpg', 'jabri rounded')
-      +section-faces-img('img/hero/hero_6.jpg', 'mauricio')
+      +section-faces-img('img/hero/hero_1.jpg', 'img/hero/hero_1.webp', 'eli')
+      +section-faces-img('img/hero/hero_2.jpg', 'img/hero/hero_2.webp', 'pem peace')
+      +section-faces-img('img/hero/hero_3.jpg', 'img/hero/hero_3.webp', 'laura')
+      +section-faces-img('img/hero/hero_4.jpg', 'img/hero/hero_4.webp', 'tom')
+      +section-faces-img('img/hero/hero_5.jpg', 'img/hero/hero_5.webp', 'jabri rounded')
+      +section-faces-img('img/hero/hero_6.jpg', 'img/hero/hero_6.webp', 'mauricio')
