@@ -83,6 +83,18 @@ let config = {
     'src/img/hero/hero_5.jpg': 'img/hero',
     'src/img/hero/hero_6.jpg': 'img/hero',
 
+    // fonts
+    'src/fonts/Formular-Bold.woff': 'fonts/',
+    'src/fonts/Formular-Medium.woff': 'fonts/',
+    'src/fonts/Formular-Black.woff': 'fonts/',
+
+    'src/fonts/Inter-Medium.ttf': 'fonts/',
+    'src/fonts/Inter-ExtraBold.ttf': 'fonts/',
+    'src/fonts/Inter-SemiBold.ttf': 'fonts/',
+
+    'src/fonts/SF-Pro-Text-Medium.otf': 'fonts/',
+    'src/fonts/SF-Pro-Text-Regular.otf': 'fonts/',
+    'src/fonts/SF-Pro-Text-Semibold.otf': 'fonts/',
 
     // 'src/fonts/demo-empty-open-sans.woff2': 'fonts/',
     // 'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
