@@ -27,6 +27,7 @@ let config = {
     './script.js',
   ],
   'addAssets': {
+    // images
     'src/img/logo.svg': 'img/',
     'src/img/icon.svg': 'img/',
 
@@ -95,6 +96,12 @@ let config = {
     'src/fonts/SF-Pro-Text-Medium.otf': 'fonts/',
     'src/fonts/SF-Pro-Text-Regular.otf': 'fonts/',
     'src/fonts/SF-Pro-Text-Semibold.otf': 'fonts/',
+
+    // js
+    'src/js/libs/wow.js': 'js/libs/',
+    'src/js/libs/jquery-3.6.0.min.js': 'js/libs/',
+    'src/js/libs/popper.min.js': 'js/libs/',
+    'src/js/libs/bootstrap.bundle.min.js': 'js/libs/',
 
     // 'src/fonts/demo-empty-open-sans.woff2': 'fonts/',
     // 'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
