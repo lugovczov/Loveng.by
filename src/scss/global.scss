@@ -872,6 +872,17 @@ textarea.w-input, textarea.w-select {
   }
 }
 
+@media screen and (max-width: 530px) {
+  h3 {
+    font-size: 34px;
+    line-height: 44px
+  }
+  .three-column-nav.quad {
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .w-container {
     max-width: none
@@ -11963,10 +11974,6 @@ strong {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
-
-    h3 {
-      word-break: break-word;
-    }
   }
   .row._100 {
     padding-right: 0;
@@ -12798,10 +12805,6 @@ strong {
   h1, h2 {
     font-size: 48px;
     line-height: 56px
-  }
-  h3 {
-    font-size: 40px;
-    line-height: 48px
   }
   h5, h6 {
     font-size: 24px;
