@@ -1,0 +1,16 @@
+extends ../pug/layout.pug
+
+block meta
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block variables
+
+block content
+
+  include ../blocks/products-wrapper/products-wrapper.data.pug
+  +product-item(products[productInfo])
+
+//- block append page-bottom
+//-   script(src='js/some.js')

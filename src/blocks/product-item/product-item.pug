@@ -1,0 +1,24 @@
+mixin product-item(product)
+
+  .container.w-container
+    .section.bootcamp-hero
+      +line-dotted
+
+      .w-layout-grid.bootcamp-hero
+        div
+          h3= product.title
+          h6= product.employment + ' · ' + product.duration
+          .inline
+            img.stars(src="img/logos/star.svg", alt="stars for rating", loading="lazy")
+            +product-rating(product.rating, 'regular-text')
+          .tiny-break
+          .break
+          div
+            .card-tools.bootcamp-tools
+              each tool in product.bootcampTools
+                +product-tool(tool.className, tool.src, tool.sizes, tool.alt, tool.count)
+          .small-break
+          .large-text= product.description
+          .break
+          a.fill.large.mobile-full.w-button(href="#modalContactForm" data-toggle="modal") Присоединиться к курсу
+        .bootcamp-hero-image(class=product.classBg)

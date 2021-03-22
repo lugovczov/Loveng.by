@@ -1,0 +1,11 @@
+mixin product-tool(className, src, sizes, alt, count)
+  if src
+    div(class=className)
+      if sizes
+        img.card-tool-logo(src=src, alt=alt, sizes=sizes, loading="lazy")
+      else
+        img.card-tool-logo(src=src, alt=alt, loading="lazy")
+  else if count
+    div(class=className)= count
+  else
+    div(class=className)

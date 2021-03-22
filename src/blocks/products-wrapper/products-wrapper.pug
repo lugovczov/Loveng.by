@@ -1,35 +1,18 @@
-mixin bootcamp-tool(className, src, sizes, alt, count)
-  if src
-    div(class=className)
-      if sizes
-        img.card-tool-logo(src=src, alt=alt, sizes=sizes, loading="lazy")
-      else
-        img.card-tool-logo(src=src, alt=alt, loading="lazy")
-  else if count
-    div(class=className)= count
-  else
-    div(class=className)
-
-
-mixin product-rating(rating)
-  - var maxRating = 5
-  .small-text= rating + '/' + maxRating + ' · ' + (rating / maxRating * 100) + '% завершения курса'
-
 mixin products-wrapper(animation)
 
   include products-wrapper.data.pug
 
     .w-layout-grid.three-column-nav
       each product in products
-        a.nav-card.w-inline-block(class=animation, href=product.url, data-toggle="modal")
+        a.nav-card.w-inline-block(class=animation, href=product.url)
           div(class=product.classBg + ' bootcamp-card-image nav-bootcamp card-bottom')
             .bootcamp-tools
               each tool in product.bootcampTools
-                +bootcamp-tool(tool.className, tool.src, tool.sizes, tool.alt, tool.count)
+                +product-tool(tool.className, tool.src, tool.sizes, tool.alt, tool.count)
           .card-body
             .inline
               img.stars(src="img/logos/star.svg", alt="stars for rating", loading="lazy")
-              +product-rating(product.rating)
+              +product-rating(product.rating, 'small-text')
             .tiny-break
             h6= product.title
             .small-text.black= product.employment + ' · ' + product.duration
