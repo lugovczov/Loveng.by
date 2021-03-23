@@ -6380,11 +6380,32 @@ strong {
   opacity: 1
 }
 
-.card-logo.miro-logo {
+.card-logo.miro {
   background-color: #ffc530;
   background-image: url("../img/logos/miro_logo.png");
   background-position: 50% 50%;
   background-size: cover
+}
+
+.card-logo.figma {
+  background-image: url("../img/logos/figma_logo.png");
+  background-position: 50% 50%;
+  background-size: 35px;
+  background-repeat: no-repeat;
+}
+
+.card-logo.powerpoint {
+  background-image: url("../img/logos/powerpoint_logo.svg");
+  background-position: 50% 50%;
+  background-size: 35px;
+  background-repeat: no-repeat;
+}
+
+.card-logo.zoom {
+  background-image: url("../img/logos/zoom_logo.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card-logo.maze-logo {
@@ -13305,6 +13326,10 @@ strong {
   .card-logo {
     width: 48px;
     height: 48px
+  }
+  .card-logo.powerpoint,
+  .card-logo.figma {
+    background-size: 27px;
   }
   .card-logo-image {
     width: 24px

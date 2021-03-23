@@ -1,0 +1,11 @@
+mixin section-tools(productIndex)
+
+  include section-tools.data.pug
+  - var productInfo = productTools[productIndex]
+
+  +section-row-test-small(productInfo)
+  .blog-break
+  if (productInfo.tools)
+    .w-layout-grid.tool-grid.bootamp-tools
+      each tool in productInfo.tools
+        +tool-item-large(tool)
