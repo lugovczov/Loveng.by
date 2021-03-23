@@ -1,0 +1,48 @@
+mixin mobile-schedule-block(data)
+
+  .key-block(class=data.class)
+    .cal-text.key-text= data.title
+    .cal-text.key-text.small-key= data.time
+    .cal-text.key-text.small-key= data.description
+
+
+mixin desktop-schedule-block(data)
+
+  .cal-block.smaller-cal
+    .cal-text.description.day-of-the-week= data.day
+    if (data.title)
+      .cal-time(class=data.class)
+        .cal-text= data.title
+        .cal-text.description.grey= data.time
+        .cal-text.description= data.description
+        if (data.live)
+          +live-dot
+
+
+mixin section-schedule(productIndex)
+
+  include section-schedule.data.pug
+
+  -
+    var scheduleMobile = productSchedule[productIndex].mobile;
+    var scheduleDesktop = productSchedule[productIndex].desktop;
+
+  +section-row-test-small(productInfo[productIndex])
+  .large-break
+
+  .key
+    each schedule in scheduleMobile
+      +mobile-schedule-block(schedule)
+
+  .break.hide-desktop
+
+  .calendar.desktop.wow.fadeIn
+    .timing
+      .text-posiition
+        .cal-text.description._9am= scheduleDesktop.time1
+        .cal-text.description._12pm= scheduleDesktop.time2
+    each scheduleItem in scheduleDesktop.days
+      +desktop-schedule-block(scheduleItem)
+
+  .break
+  .large-break
