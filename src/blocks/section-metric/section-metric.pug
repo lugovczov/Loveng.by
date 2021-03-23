@@ -1,13 +1,3 @@
-mixin metric-item(metric)
-  .metric-block.light
-    .metric-mount-block
-      h4.no-margin= metric.rate
-    .tiny-break
-    .metric-block
-      .capitals= metric.title
-      .regular-text= metric.description
-
-
 mixin section-metric
   include section-metric.data.pug
 
@@ -18,4 +8,4 @@ mixin section-metric
 
         .w-layout-grid.metric-grid
           each metric in metrics
-            +metric-item(metric)
+            +metric-item(metric, 'regular-text')

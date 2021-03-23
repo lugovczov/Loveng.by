@@ -3593,7 +3593,8 @@ strong {
   background-color: #e2dffa;
   color: #1a222b;
   font-size: 14px;
-  line-height: 20px
+  line-height: 20px;
+  overflow: hidden;
 }
 
 .badge.green {
@@ -5751,9 +5752,44 @@ strong {
 .accordion-chevron {
   margin-right: 12px;
   opacity: .6;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg)
+  transform: rotate(-90deg);
+  animation: arrow-rotate-right 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.accordion-header.active .accordion-chevron {
+  animation: arrow-rotate-bottom 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arrow-rotate-bottom {
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes arrow-rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  85% {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
 }
 
 .accordion-body {
@@ -6139,7 +6175,7 @@ strong {
   background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fccfc9402a6_laptop_03%20(1).jpg")
 }
 
-.accordian-text {
+.accordion-text {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600
@@ -12029,7 +12065,7 @@ strong {
   .title {
     margin-bottom: 32px
   }
-  .accordian-text {
+  .accordion-text {
     font-size: 20px;
     line-height: 24px
   }
@@ -12545,7 +12581,7 @@ strong {
   .remote-laptop {
     height: 240px
   }
-  .accordian-text {
+  .accordion-text {
     font-size: 18px;
     line-height: 24px
   }
@@ -13228,7 +13264,7 @@ strong {
     grid-column-gap: 24px;
     grid-row-gap: 24px
   }
-  .accordian-text {
+  .accordion-text {
     font-size: 17px;
     line-height: 24px
   }

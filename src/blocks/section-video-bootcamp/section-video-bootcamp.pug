@@ -1,0 +1,17 @@
+mixin section-video-bootcamp(productIndex)
+  include product-info.data.pug
+
+  - var info = productInfo[productIndex]
+
+  +section-row-test-small(info)
+  .blog-break
+  .video-container.small-container.wow.fadeInUp
+    .video-2.w-video.w-embed.wow.fadeInUp
+      +embed-responsive()
+        iframe(src=info.videoLink, frameborder='0', allowfullscreen='', loading="lazy")
+
+  .break
+  .section.small-section
+    .w-layout-grid.metric-grid.three
+      each  metric in info.metrics
+        +metric-item(metric, 'small-text')

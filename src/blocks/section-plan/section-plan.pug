@@ -1,0 +1,29 @@
+mixin plan-item(planItem)
+
+  .accordion
+    .accordion-header
+      .title-left
+        img.accordion-chevron(src="img/logos/chevron.svg", alt="стрелка показывающая открытие блока", loading="lazy")
+        h6.accordion-text= planItem.title
+      .badge.grey.hide-mobile(class=planItem.badgeClass)= planItem.badge
+
+    if (planItem.description.text)
+      .accordion-body
+        .module-body
+          .regular-text= planItem.description.text
+
+          if (planItem.description.list)
+            .small-break
+            ul.list(role="list")
+              each listTitle in planItem.description.list
+                li= listTitle
+
+
+mixin section-plan(productIndex)
+  include section-plan.data.pug
+
+  +section-row-test-small(productInfo[productIndex])
+
+  .curriculum
+    each planItem in plan[productIndex]
+      +plan-item(planItem)

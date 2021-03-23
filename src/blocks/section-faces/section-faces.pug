@@ -10,11 +10,12 @@ mixin section-faces-img(src, name)
 
 mixin section-faces
 
-  #containerFaces.container.faces.w-container
-    #faces-grid.w-layout-grid.faces-grid(style="will-change: transform; transform: translate3d(-340.112px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;")
-      +section-faces-img('img/hero/hero_1.jpg', 'img/hero/hero_1.webp', 'eli')
-      +section-faces-img('img/hero/hero_2.jpg', 'img/hero/hero_2.webp', 'pem peace')
-      +section-faces-img('img/hero/hero_3.jpg', 'img/hero/hero_3.webp', 'laura')
-      +section-faces-img('img/hero/hero_4.jpg', 'img/hero/hero_4.webp', 'tom')
-      +section-faces-img('img/hero/hero_5.jpg', 'img/hero/hero_5.webp', 'jabri rounded')
-      +section-faces-img('img/hero/hero_6.jpg', 'img/hero/hero_6.webp', 'mauricio')
+  .body-wrapper
+    #containerFaces.container.faces.w-container
+      #faces-grid.w-layout-grid.faces-grid(style="will-change: transform; transform: translate3d(-340.112px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;")
+        +section-faces-img('img/hero/hero_1.jpg', 'img/hero/hero_1.webp', 'eli')
+        +section-faces-img('img/hero/hero_2.jpg', 'img/hero/hero_2.webp', 'pem peace')
+        +section-faces-img('img/hero/hero_3.jpg', 'img/hero/hero_3.webp', 'laura')
+        +section-faces-img('img/hero/hero_4.jpg', 'img/hero/hero_4.webp', 'tom')
+        +section-faces-img('img/hero/hero_5.jpg', 'img/hero/hero_5.webp', 'jabri rounded')
+        +section-faces-img('img/hero/hero_6.jpg', 'img/hero/hero_6.webp', 'mauricio')

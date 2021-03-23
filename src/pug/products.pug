@@ -1,0 +1,30 @@
+extends ../pug/layout.pug
+
+block meta
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block variables
+
+block content
+
+  include ../blocks/products-wrapper/products-wrapper.data.pug
+  +product-item(products[productIndex])
+
+  .container.sticky-time.w-container
+    .section.sticky
+      +line-dotted
+      .bootcamp-section
+        include ../blocks/sticky-navigation/sticky-navigation.data.pug
+        +sticky-navigation(navigationLinks[productIndex])
+
+        .bootcamp-column
+          .bootcamp-row
+            +section-video-bootcamp(productIndex)
+            .extra-large-break
+            +section-plan(productIndex)
+
+
+block append page-bottom
+  script(src='js/product-page.js')

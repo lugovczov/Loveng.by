@@ -1,0 +1,15 @@
+mixin sticky-navigation-link(link)
+  a.in-page-link.w-inline-block(href=link.url)= link.title
+
+
+mixin sticky-navigation(navigationLinks)
+
+  .bootcamp-navigation
+    .footer-header
+      .capitals= navigationLinks.title
+
+    each link in navigationLinks.links
+      +sticky-navigation-link(link)
+
+    .break
+    a.outline.full.fill.w-button(href="#modalContactForm", data-toggle="modal") Присоединиться

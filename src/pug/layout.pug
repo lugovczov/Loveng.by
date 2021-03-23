@@ -50,20 +50,19 @@ html(class='page  no-js', lang='ru')
   body.body.webp_supported
     noscript У вас отключен JavaScript. Это пугает.
 
-    .body-wrapper
 
-      +top-link
-      +page-header
-      +sidebar
-
-
-      block content
-        p содержимое
+    +top-link
+    +page-header
+    +sidebar
 
 
-      +modal-in-dev
-      +modal-contact-form
-      +page-footer
+    block content
+      p содержимое
+
+
+    +modal-in-dev
+    +modal-contact-form
+    +page-footer
 
     block page-bottom
       script(src='js/libs/wow.js')

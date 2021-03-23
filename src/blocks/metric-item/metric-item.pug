@@ -1,0 +1,9 @@
+mixin metric-item(metric, textClass)
+
+  .metric-block.light
+    .metric-mount-block
+      h4.no-margin= metric.rate
+    .tiny-break
+    .metric-block
+      .capitals= metric.title
+      div(class=textClass)= metric.description

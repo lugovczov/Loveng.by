@@ -72,6 +72,7 @@ let config = {
     'src/img/logos/revolut_logo.jpg': 'img/logos',
     'src/img/logos/uber_logo.jpg': 'img/logos',
     'src/img/logos/salesforce_logo.jpg': 'img/logos',
+    'src/img/logos/chevron.svg': 'img/logos',
 
     'src/img/avatars/viktoria.jpg': 'img/avatars',
     'src/img/avatars/veronika.jpg': 'img/avatars',

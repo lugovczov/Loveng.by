@@ -369,7 +369,37 @@ function buildIndexJs() {
     }))
     .pipe(dest(`${dir.build}js`));
 }
-exports.buildIndexJs = buildIndexJs;
+
+function buildProductsJs() {
+  return src(`${dir.src}js/product-page.js`)
+    .pipe(plumber())
+    .pipe(webpackStream({
+      mode: mode,
+      devtool: 'inline-source-map',
+      output: {
+        filename: 'product-page.js',
+      },
+      resolve: {
+        alias: {
+          Utils: path.resolve(__dirname, 'src/js/utils/'),
+        },
+      },
+      module: {
+        rules: [
+          {
+            test: /\.(js)$/,
+            exclude: /(node_modules)/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['@babel/preset-env']
+            }
+          }
+        ]
+      },
+    }))
+    .pipe(dest(`${dir.build}js`));
+}
+exports.buildProductsJs = buildProductsJs;
 
 function buildPHP() {
   return src(`./${dir.src}php/mail.php`)
@@ -412,7 +442,7 @@ function serve() {
   watch([`${dir.src}pages/**/*.pug`], { events: ['change', 'add'], delay: 100 }, series(
     compilePugFast,
     parallel(writeSassImportsFile, writeJsRequiresFile),
-    parallel(compileSass, buildJs, buildIndexJs, buildPHP),
+    parallel(compileSass, buildJs, buildIndexJs, buildProductsJs, buildPHP),
     reload
   ));
 
@@ -447,7 +477,7 @@ function serve() {
   watch([`${dir.src}pug/**/*.pug`, `!${dir.src}pug/mixins.pug`], { delay: 100 }, series(
     compilePug,
     parallel(writeSassImportsFile, writeJsRequiresFile),
-    parallel(compileSass, buildJs, buildIndexJs, buildPHP),
+    parallel(compileSass, buildJs, buildIndexJs, buildProductsJs, buildPHP),
     reload,
   ));
 
@@ -472,6 +502,7 @@ function serve() {
     writeJsRequiresFile,
     buildJs,
     buildIndexJs,
+    buildProductsJs,
     reload
   ));
 
@@ -499,7 +530,7 @@ exports.build = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
-  parallel(compileSass, buildJs,buildIndexJs, buildPHP),
+  parallel(compileSass, buildJs,buildIndexJs, buildProductsJs, buildPHP),
 );
 
 
@@ -507,7 +538,7 @@ exports.default = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
-  parallel(compileSass, buildJs,buildIndexJs, buildPHP),
+  parallel(compileSass, buildJs,buildIndexJs, buildProductsJs, buildPHP),
   serve,
 );
 
