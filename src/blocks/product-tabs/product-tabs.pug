@@ -1,0 +1,59 @@
+mixin product-tabs(productIndex)
+  include product-tabs.data.pug
+  -
+    var productInfoPart1 = infoPart1[productIndex]
+    var productInfoPart2 = infoPart2[productIndex]
+    var productInfoPart3 = infoPart3[productIndex]
+
+  .div-block-25
+    .w-tabs(data-duration-in="300", data-duration-out="100")
+      +tabs([
+        {
+          'id': 'tab-1',
+          'text': '⚡️ Live Classes',
+          'isActive': true,
+        },
+        {
+          'id': 'tab-2',
+          'text': 'Homework',
+        },
+        {
+          'id': 'tab-3',
+          'text': 'Events',
+        },
+      ], 'tabs-menu w-tab-menu')
+        +tabs-item('tab-1', true, 'some')
+          .schedule-container
+            h6= productInfoPart1.title
+            .regular-text.wow.fadeIn= productInfoPart1.subtitle
+            .small-break
+            .regular-text.wow.fadeIn= productInfoPart1.description
+            .small-break
+
+            .video-container.small-container.wow.fadeInUp
+              .video-2.w-video.w-embed.wow.fadeInUp
+                +embed-responsive()
+                  iframe(src=productInfoPart1.videoLink, frameborder='0', allowfullscreen='', loading="lazy")
+            .small-break
+
+        +tabs-item('tab-2')
+          .schedule-container
+            h6= productInfoPart2.title
+            .regular-text.wow.fadeIn= productInfoPart2.subtitle
+            .small-break
+            .regular-text.wow.fadeIn= productInfoPart2.description
+            .small-break
+
+            img.image-15(src=productInfoPart2.imgSrc, alt="", loading="lazy")
+            .small-break
+
+        +tabs-item('tab-3')
+          .schedule-container
+            h6= productInfoPart3.title
+            .regular-text.wow.fadeIn= productInfoPart3.subtitle
+            .small-break
+            .regular-text.wow.fadeIn= productInfoPart3.description
+            .small-break
+
+            img.check-in(src=productInfoPart3.imgSrc, alt="", loading="lazy")
+            .small-break

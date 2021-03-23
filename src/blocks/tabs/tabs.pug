@@ -40,8 +40,8 @@ mixin tabs(props, mods)
       each tab in props
         -
           var isActive = (typeof(tab.isActive) !== 'undefined' && tab.isActive) ? '  w--current' : ''
-        li(class=isActive, role='presentation')
-          a.tab.w-inline-block.w-tab-link(href='#'+tab.id, data-toggle='tab', role='tab')!= tab.text
+        li(role='presentation')
+          a.tab.w-inline-block.w-tab-link(class=isActive, href='#'+tab.id, data-toggle='tab', role='tab')!= tab.text
     .w-tab-content
       block
 
