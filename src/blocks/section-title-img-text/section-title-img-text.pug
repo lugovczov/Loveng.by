@@ -1,0 +1,18 @@
+mixin section-title-img-text(data)
+
+  .title(id=data.id)= data.title
+  h4= data.subtitle
+
+  .teacher-block
+    .w-layout-grid.teacher-grid
+      .teacher-image.wow.fadeIn
+      div
+        .large-text.wow.fadeIn
+          strong.bold-text-4.wow.fadeIn= data.author
+        .small-text.wow.fadeIn= data.authorRole
+        .small-break
+        .regular-text= data.description
+        br
+        br
+        a.outline.w-inline-block(href="#modalContactForm", data-toggle="modal")= data.btn
+        .small-break
