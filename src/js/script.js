@@ -1,9 +1,7 @@
 // /* global document console */
 require('../blocks/main-nav/main-nav.js');
 require('../blocks/sidebar/sidebar.js');
-require('../blocks/tabs/tabs.js');
 require('../blocks/modal-contact-form/modal-contact-form.js');
-require('../blocks/section-faces/section-faces.js');
 
 import ready from 'Utils/documentReady.js';
 // import getScrollSize from 'Utils/getScrollSize.js';

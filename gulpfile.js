@@ -304,9 +304,6 @@ exports.writeJsRequiresFile = writeJsRequiresFile;
 function buildJs() {
   const entryList = {
     'bundle': `./${dir.src}js/entry.js`,
-    // 'wow': `./${dir.src}js/libs/wow.js`,
-    // 'jquery': `./${dir.src}js/libs/jquery-3.2.1.slim.min.js`,
-    // 'bootstrap': `./${dir.src}js/libs/bootstrap.bundle.min.js`,
   };
   if(buildLibrary) entryList['blocks-library'] = `./${dir.blocks}blocks-library/blocks-library.js`;
   return src(`${dir.src}js/entry.js`)
@@ -342,6 +339,37 @@ function buildJs() {
     .pipe(dest(`${dir.build}js`));
 }
 exports.buildJs = buildJs;
+
+function buildIndexJs() {
+  return src(`${dir.src}js/index-page.js`)
+    .pipe(plumber())
+    .pipe(webpackStream({
+      mode: mode,
+      devtool: 'inline-source-map',
+      output: {
+        filename: 'index-page.js',
+      },
+      resolve: {
+        alias: {
+          Utils: path.resolve(__dirname, 'src/js/utils/'),
+        },
+      },
+      module: {
+        rules: [
+          {
+            test: /\.(js)$/,
+            exclude: /(node_modules)/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['@babel/preset-env']
+            }
+          }
+        ]
+      },
+    }))
+    .pipe(dest(`${dir.build}js`));
+}
+exports.buildIndexJs = buildIndexJs;
 
 function buildPHP() {
   return src(`./${dir.src}php/mail.php`)
@@ -384,7 +412,7 @@ function serve() {
   watch([`${dir.src}pages/**/*.pug`], { events: ['change', 'add'], delay: 100 }, series(
     compilePugFast,
     parallel(writeSassImportsFile, writeJsRequiresFile),
-    parallel(compileSass, buildJs, buildPHP),
+    parallel(compileSass, buildJs, buildIndexJs, buildPHP),
     reload
   ));
 
@@ -419,7 +447,7 @@ function serve() {
   watch([`${dir.src}pug/**/*.pug`, `!${dir.src}pug/mixins.pug`], { delay: 100 }, series(
     compilePug,
     parallel(writeSassImportsFile, writeJsRequiresFile),
-    parallel(compileSass, buildJs, buildPHP),
+    parallel(compileSass, buildJs, buildIndexJs, buildPHP),
     reload,
   ));
 
@@ -443,6 +471,7 @@ function serve() {
   watch([`${dir.src}js/**/*.js`, `!${dir.src}js/entry.js`, `${dir.blocks}**/*.js`], { events: ['all'], delay: 100 }, series(
     writeJsRequiresFile,
     buildJs,
+    buildIndexJs,
     reload
   ));
 
@@ -470,7 +499,7 @@ exports.build = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
-  parallel(compileSass, buildJs, buildPHP),
+  parallel(compileSass, buildJs,buildIndexJs, buildPHP),
 );
 
 
@@ -478,7 +507,7 @@ exports.default = series(
   parallel(clearBuildDir, writePugMixinsFile),
   parallel(compilePugFast, copyAssets, generateSvgSprite, generatePngSprite),
   parallel(copyImg, writeSassImportsFile, writeJsRequiresFile),
-  parallel(compileSass, buildJs, buildPHP),
+  parallel(compileSass, buildJs,buildIndexJs, buildPHP),
   serve,
 );
 
