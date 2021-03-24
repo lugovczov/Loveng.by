@@ -25,9 +25,9 @@ mixin product-tabs(productIndex)
         +tabs-item('tab-21', true, 'some')
           .schedule-container
             h6= productInfoPart1.title
-            .regular-text.wow.fadeIn= productInfoPart1.subtitle
+            .regular-text.wow.fadeInUp= productInfoPart1.subtitle
             .small-break
-            .regular-text.wow.fadeIn= productInfoPart1.description
+            .regular-text.wow.fadeInUp= productInfoPart1.description
             .small-break
 
             .video-container.small-container.wow.fadeInUp
@@ -39,9 +39,9 @@ mixin product-tabs(productIndex)
         +tabs-item('tab-22')
           .schedule-container
             h6= productInfoPart2.title
-            .regular-text.wow.fadeIn= productInfoPart2.subtitle
+            .regular-text= productInfoPart2.subtitle
             .small-break
-            .regular-text.wow.fadeIn= productInfoPart2.description
+            .regular-text= productInfoPart2.description
             .small-break
 
             img.image-15(src=productInfoPart2.imgSrc, alt="", loading="lazy")
@@ -50,9 +50,9 @@ mixin product-tabs(productIndex)
         +tabs-item('tab-23')
           .schedule-container
             h6= productInfoPart3.title
-            .regular-text.wow.fadeIn= productInfoPart3.subtitle
+            .regular-text= productInfoPart3.subtitle
             .small-break
-            .regular-text.wow.fadeIn= productInfoPart3.description
+            .regular-text= productInfoPart3.description
             .small-break
 
             img.check-in(src=productInfoPart3.imgSrc, alt="", loading="lazy")
