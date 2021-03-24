@@ -31,17 +31,17 @@ mixin tabs(props, mods)
     if(typeof(mods) !== 'undefined' && mods) {
       var modsList = mods.split(',');
       for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' tabs--' + modsList[i].trim();
+        allMods = allMods + modsList[i].trim();
       }
     }
 
-  .tabs(class=allMods)&attributes(attributes)
-    ul.tabs-menu.w-tab-menu.wow.fadeInUp(role='tablist')
+  .tabs&attributes(attributes)
+    ul(class=allMods).wow.fadeInUp(role='tablist')
       each tab in props
         -
           var isActive = (typeof(tab.isActive) !== 'undefined' && tab.isActive) ? '  w--current' : ''
         li(role='presentation')
-          a.tab.w-inline-block.w-tab-link(class=isActive, href='#'+tab.id, data-toggle='tab', role='tab')!= tab.text
+          a.tab.w-inline-block.w-tab-link(class=isActive, href='#'+tab.id, data-toggle='tab-no-bootstrap', role='tab')!= tab.text
     .w-tab-content
       block
 

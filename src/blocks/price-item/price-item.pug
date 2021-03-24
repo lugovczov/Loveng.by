@@ -1,0 +1,45 @@
+mixin price-item(data)
+
+  .next-bootcamp.pricing.page-price
+    div
+      .small-text= data.name
+      .tiny-break
+      .inline
+        h6= data.title + ' · '
+          span.highlight= 'Save ' + data.price_discount
+        .vertical-break
+      .small-break
+      div
+        .pricing-text
+          span.strike= data.price_week
+          |  #{data.price_after_discount_week}
+          span.pricing-grey= ' / week'
+    .small-break
+    .pricing-calc
+      .price-block
+        .regular-text.black 🎉 Save Today
+        .regular-text.black= '-' + data.price_discount
+      .price-block.total
+        .regular-text.black Total
+        .regular-text.black
+          span.strike= data.price
+          |  #{data.price_after_discount}
+    .break
+    a.outline.full.fill.w-button(href='#modalContactForm', data-toggle="modal") Записывайтесь прямо сейчас
+    .card-tools.pricing-tools
+      .card-tool
+        img.card-tool-logo(src='img/logos/zoom_logo.svg', alt='логотип zoom', loading="lazy")
+      .card-tool.card-overlap
+        img.card-tool-logo(src='img/logos/figma_logo.png', alt='логотип figma', loading="lazy")
+      .card-tool.card-overlap
+        img.card-tool-logo(src='img/logos/miro_logo.png', alt='логотип miro', loading="lazy")
+      .card-tool.card-overlap
+        img.card-tool-logo(src='img/logos/powerpoint_logo.svg', alt='логотип powerpoint', loading="lazy")
+    .card-body.pricing-body
+      .small-break
+      .small-break
+      each title in data.list
+        .check-bloxk
+          img.check-icon(src='img/logos/arrow_check.svg', alt='иконка стрелки', loading="lazy")
+          .small-text= title
+

@@ -1,0 +1,26 @@
+mixin product-prices(productIndex)
+
+  include product-prices.data.pug
+  - var productPrice = prices[productIndex]
+
+  +section-row-test-small(productInfo[productIndex])
+  .large-break
+
+  .tabs-5.w-tabs(data-duration-in="300", data-duration-out="100")
+    +tabs([
+      {
+        'id': 'tab-31',
+        'text': 'Pay today',
+        'isActive': true,
+      },
+      {
+        'id': 'tab-32',
+        'text': 'Pay monthly',
+      },
+    ], 'tabs-menu tabs-menu-3 center-tabs w-tab-menu')
+      +tabs-item('tab-31', true, 'some')
+        .schedule-container
+          +price-item(productPrice.one)
+      +tabs-item('tab-32')
+        .schedule-container
+          +price-item(productPrice.two)

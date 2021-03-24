@@ -9,20 +9,20 @@ mixin product-tabs(productIndex)
     .w-tabs(data-duration-in="300", data-duration-out="100")
       +tabs([
         {
-          'id': 'tab-1',
+          'id': 'tab-21',
           'text': '⚡️ Live Classes',
           'isActive': true,
         },
         {
-          'id': 'tab-2',
+          'id': 'tab-22',
           'text': 'Homework',
         },
         {
-          'id': 'tab-3',
+          'id': 'tab-23',
           'text': 'Events',
         },
-      ], 'tabs-menu w-tab-menu')
-        +tabs-item('tab-1', true, 'some')
+      ], 'tabs tabs-menu w-tab-menu')
+        +tabs-item('tab-21', true, 'some')
           .schedule-container
             h6= productInfoPart1.title
             .regular-text.wow.fadeIn= productInfoPart1.subtitle
@@ -36,7 +36,7 @@ mixin product-tabs(productIndex)
                   iframe(src=productInfoPart1.videoLink, frameborder='0', allowfullscreen='', loading="lazy")
             .small-break
 
-        +tabs-item('tab-2')
+        +tabs-item('tab-22')
           .schedule-container
             h6= productInfoPart2.title
             .regular-text.wow.fadeIn= productInfoPart2.subtitle
@@ -47,7 +47,7 @@ mixin product-tabs(productIndex)
             img.image-15(src=productInfoPart2.imgSrc, alt="", loading="lazy")
             .small-break
 
-        +tabs-item('tab-3')
+        +tabs-item('tab-23')
           .schedule-container
             h6= productInfoPart3.title
             .regular-text.wow.fadeIn= productInfoPart3.subtitle

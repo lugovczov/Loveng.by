@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Следим за поднимающимися кликами
   document.addEventListener('click', function(event) {
-    if(event.target.dataset.toggle === 'tab') {
+    if(event.target.dataset.toggle === 'tab-no-bootstrap') {
       event.preventDefault();
       var target = event.target.hash === undefined ? event.target.dataset.target : event.target.hash;
       if ( target !== undefined ) {
