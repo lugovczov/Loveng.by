@@ -1,1 +1,7 @@
-require('../blocks/section-plan/section-plan.js');
+$('.accordion-header').click(function() {
+  if (!$(this).next('.accordion-body').length) {
+    return;
+  }
+  $(this).next('.accordion-body').fadeToggle();
+  $(this).toggleClass('active');
+})

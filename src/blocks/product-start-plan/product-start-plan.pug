@@ -1,0 +1,51 @@
+mixin product-start-plan(productIndex)
+
+  include product-start-plan.data.pug
+  - var productPlans = plans[productIndex]
+
+  +section-row-test-small(productInfo)
+  .blog-break
+
+  .tabs-6.w-tabs(data-duration-in="300", data-duration-out="100")
+    +tabs([
+      {
+        'id': 'tab-41',
+        'text': productPlans[0].start_month,
+        'isActive': true,
+      },
+      {
+        'id': 'tab-42',
+        'text': productPlans[1].start_month,
+      },
+    ], 'tabs tabs-menu tabs-menu-3 w-tab-menu')
+      +tabs-item('tab-41', true, 'some')
+        .schedule-container
+          h6.wow.fadeIn= productPlans[0].plan
+          .next-bootcamp
+            .div-block-24
+              .regular-text
+                strong= productPlans[0].title
+              .regular-text= productPlans[0].subtitle
+              .tiny-break
+              .badge(class=productPlans[0].badge_class)= productPlans[0].badge
+            .rigth-button
+            if (new Date(productPlans[0].start_date) > new Date())
+              a.outline.full-mobile(href="#modalContactForm", data-toggle="modal") Присоединиться
+            else
+              a.outline.full-mobile.disabled Присоединиться
+
+      +tabs-item('tab-42')
+        .schedule-container
+          h6.wow.fadeIn= productPlans[1].plan
+          .next-bootcamp
+            .div-block-24
+              .regular-text
+                strong= productPlans[1].title
+              .regular-text= productPlans[1].subtitle
+              .tiny-break
+              .badge(class=productPlans[1].badge_class)= productPlans[1].badge
+            .rigth-button
+            if (new Date(productPlans[1].start_date) > new Date())
+              a.outline.full-mobile(href="#modalContactForm", data-toggle="modal") Присоединиться
+            else
+              a.outline.full-mobile.disabled Присоединиться

@@ -1,0 +1,14 @@
+mixin product-question(productIndex)
+
+  include product-question.data.pug
+
+  +section-row-test-small(productInfo)
+  .blog-break
+  each data in questions[productIndex]
+    .accordion.wow.fadeIn
+      .accordion-header
+        .title-left
+          img.accordion-chevron(src="img/logos/chevron.svg", alt="стрелка показывающая открытие блока", loading="lazy")
+          h6.accordion-text= data.question
+      .accordion-body
+        .regular-text= data.answer
