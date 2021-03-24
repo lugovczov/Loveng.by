@@ -1,0 +1,15 @@
+mixin product-reviews(productIndex)
+
+  include product-reviews.data.pug
+  - var productReviews = reviews[productIndex]
+
+  +section-row-test-small(productInfo[productIndex])
+  .blog-break
+  .tribe-tesimonial-container.full-testimonial
+    .tribe-column.left-column
+      each review in productReviews.partOne
+        +review-item(review)
+
+    .tribe-column.central-column
+      each review in productReviews.partTwo
+        +review-item(review)
