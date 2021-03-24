@@ -35,5 +35,10 @@ ThisIsWebP().then(function() {
   document.body.classList.remove('webp_supported');
 });
 
+function scrollToAnchor(id){
+  $('html,body').animate({scrollTop: $("#"+ id).offset().top},'slow');
+}
 
-
+$("[href^='#link-']").click(function() {
+  scrollToAnchor($(this).attr('href').slice(1));
+});
