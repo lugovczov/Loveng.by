@@ -13,5 +13,19 @@ mixin section-video
         .video-container.wow.fadeInUp
           .video-2.w-video.w-embed.wow.fadeInUp
             +embed-responsive()
-              iframe(src='https://www.youtube.com/embed/Ncw-XN7MIws', frameborder='0', allowfullscreen='', loading="lazy")
-
+              iframe(
+                src='//fast.wistia.net/embed/iframe/oawd0x18ok?videoFoam=true',
+                allowtransparency="true",
+                frameborder="0",
+                scrolling="no",
+                class="wistia_embed",
+                name="wistia_embed",
+                allowfullscreen,
+                mozallowfullscreen,
+                webkitallowfullscreen,
+                oallowfullscreen,
+                msallowfullscreen,
+                width="1270",
+                height="715",
+                loading="lazy"
+                )
