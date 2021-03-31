@@ -124,6 +124,8 @@ let config = {
     'src/js/libs/popper.min.js': 'js/libs/',
     'src/js/libs/bootstrap.bundle.min.js': 'js/libs/',
 
+    'src/js/videoask.js': 'js/',
+
     // 'src/fonts/demo-empty-open-sans.woff2': 'fonts/',
     // 'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
     // 'node_modules/somePackage/images/*.{png,svg,jpg,jpeg}': 'img/',
