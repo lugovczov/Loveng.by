@@ -1,3 +1,3 @@
-mixin product-rating(rating, text)
+mixin product-rating(rating, textClass)
   - var maxRating = 5
   div(class=textClass)= rating + '/' + maxRating + ' · ' + (rating / maxRating * 100) + '% завершения курса'

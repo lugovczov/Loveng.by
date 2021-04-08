@@ -1,6 +1,6 @@
 window.VIDEOASK_EMBED_CONFIG = {
   "kind": "widget",
-  "url": "https://www.videoask.com/fhff7hpb3",
+  "url": "https://www.videoask.com/f0vfkzrep",
   "options": {
     "widgetType": "VideoThumbnailWindowTall",
     "text": "",

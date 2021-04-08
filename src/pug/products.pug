@@ -14,7 +14,7 @@ block content
       +line-dotted
       .bootcamp-section
         include ../blocks/sticky-navigation/sticky-navigation.data.pug
-        +sticky-navigation(navigationLinks[productIndex])
+        +sticky-navigation(navigationLinks, navigationTitle[productIndex])
 
         .bootcamp-column
           .bootcamp-row
@@ -23,6 +23,12 @@ block content
             +section-plan(productIndex)
             .extra-large-break
             +section-schedule(productIndex)
+
+            +quote(
+              "Если вы знаете языки, вы везде будете как дома.",
+              "Эдмунд дэ Вааль"
+            )
+
             +product-tabs(productIndex)
             .extra-large-break
 
@@ -50,5 +56,3 @@ block content
 
 block append page-bottom
   script(src='js/product-page.js')
-  script(src='js/videoask.js')
-  script(src='https://www.videoask.com/embed/embed.js')

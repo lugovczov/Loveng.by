@@ -1,259 +1,860 @@
 -
-  var productInfo = [
-    {
-      id: "link-sched",
-      text1: "Design System Schedule",
-      text2: "Build a Design System live and together",
-      text3: "Our Bootcamps are intense and It will be a lotta work. We pride ourselves on having a schedule that works for busy designers around the world. Every step of the way you'll receive support from your teacher, classmates, and our tribe of thousands of designers around the world! From zoom chats, to loom tutorials; we go the extra mile to help you learn.",
-    },
-    {
-      id: "link-sched",
-      text1: "Design System Schedule",
-      text2: "Build a Design System live and together",
-      text3: "Our Bootcamps are intense and It will be a lotta work. We pride ourselves on having a schedule that works for busy designers around the world. Every step of the way you'll receive support from your teacher, classmates, and our tribe of thousands of designers around the world! From zoom chats, to loom tutorials; we go the extra mile to help you learn.",
-    },
-    {
-      id: "link-sched",
-      text1: "Design System Schedule",
-      text2: "Build a Design System live and together",
-      text3: "Our Bootcamps are intense and It will be a lotta work. We pride ourselves on having a schedule that works for busy designers around the world. Every step of the way you'll receive support from your teacher, classmates, and our tribe of thousands of designers around the world! From zoom chats, to loom tutorials; we go the extra mile to help you learn.",
-    },
-  ];
+  var productInfo = {
+    id: "link-sched",
+    text1: "РАСПИСАНИЕ LOVENG",
+    text2: "Расписание онлайн-занятий в Loveng",
+    text3: "Наши учебные курсы интенсивны, и это отличная новость. Мы гордимся тем, что у нас есть расписание подходящее для всех. На каждом этапе обучения вы будете получать поддержку от своего преподавателя и одногруппников. Выберите удобный для вас день и подходящее время. Дома, в транспорте, на работе – теперь нет границ.",
+  };
 
 
   var productSchedule = [
     {
       mobile: [
-        {
-          class: "",
-          title: "Live class",
-          time: "1-3pm BST",
-          description: "Jump into our live class with designers",
-        },
-        {
-          class: "homework-block",
-          title: "Homework",
-          time: "2-3hrs",
-          description: "Spend time completing your weekly design tasks",
-        },
-        {
-          class: "one-to-one-block",
-          title: "Office hours",
-          time: "1pm",
-          description: "Ask your teacher questions",
-        },
-        {
-          class: "one-to-one-block yoga",
-          title: "Yoga",
-          time: "4pm",
-          description: "Unwind from Bootcamp with Yoga",
-        },
-      ],
-      desktop: {
-        time1: "3pm",
-        time2: "5pm",
-        days: [
+        [
           {
-            day: "Mon",
             class: "",
-            live: "false",
-            title: "",
-            time: "",
-            description: "",
+            title: "Групповое занятие",
+            live: true,
+            time: "Пн 9:00 <br> Вт 11:30 <br> Ср 9:00",
+            description: "Присоединяйтесь к нашему онлайн занятию"
           },
           {
-            day: "Tue",
-            class: "day-class",
-            live: "true",
-            title: "Live class",
-            time: "3-5pm BST",
-            description: "Jump into our live class with designers",
+            class: "yellow",
+            title: "Домашнее задание",
+            time: "Пн 11:00 - 12:00 <br> Чт 10:00",
+            description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
           },
           {
-            day: "Wed",
-            class: "homework full",
-            title: "Homework",
-            time: "1hr",
-            description: "Review what we coverered in class our Figma Live Class and crack on with your tasks this week.",
+            class: "green",
+            title: "Персональное занятие",
+            time: "Ср 10:30 - 12:00 <br> Пт 9:00 - 11:30 <br> Вс 9:00 - 11:30",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
+        [
+          {
+            class: "",
+            title: "Групповое занятие",
+            live: true,
+            time: "Ср 14:00 <br> Вс 13:00",
+            description: "Присоединяйтесь к нашему онлайн занятию"
           },
           {
-            day: "Thue",
-            class: "one-to-one yoga ds-yoga",
-            title: "Yoga",
-            time: "4pm BST",
-            description: "Unwind from Bootcamp and get stretchy!",
+            class: "yellow",
+            title: "Домашнее задание",
+            time: "Вт 13:00 - 14:00",
+            description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
           },
           {
-            day: "Fri",
-            class: "one-to-one top-one",
-            title: "Office Hours",
-            time: "3pm BST",
-            description: "Ask questions and check in with your class",
+            class: "green",
+            title: "Персональное занятие",
+            time: "Ср 15:00 - 16:00 <br> Чт 15:00",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
+        [
+          {
+            class: "",
+            title: "Групповое занятие",
+            live: true,
+            time: "Вт 19:00 <br> Чт 19:00",
+            description: "Присоединяйтесь к нашему онлайн занятию"
           },
           {
-            day: "Weekend",
-            class: "homework full",
-            title: "Homework",
-            time: "3pm BST",
-            description: "Wrap up this weeks design System task and enjoy your weekend with family and friends 🎉",
+            class: "green",
+            title: "Персональное занятие",
+            time: "Ср 16:00 - 19:00 <br> Чт 16:00 - 19:00 <br> Пт 16:30 - 18:00",
+            description: "Занимайтесь индивидуально с преподавателем"
           },
-        ]
-      },
+        ],
+      ],
+      desktop: [
+        {
+          time1: "9:00",
+          time2: "11:00",
+          days: [
+            {
+              day: "Пн",
+              items: [
+                {
+                  class: "",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "9:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-40 yellow lunch",
+                  title: "Домашнее задание",
+                  time: "11:00 - 12:00",
+                  description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
+                }
+              ]
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "mt-210  lunch",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "11:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                }
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "9:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-20 green lunch custom-width",
+                  title: "Персональное занятие",
+                  time: "10:30 - 12:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "mt-75 yellow",
+                  title: "Домашнее задание",
+                  time: "10:00",
+                  description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
+                }
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: " green custom-width",
+                  title: "Персональное занятие",
+                  time: "9:00 - 11:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Вс",
+              items: [
+                {
+                  class: " green custom-width",
+                  title: "Персональное занятие",
+                  time: "9:00 - 11:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+          ]
+        },
+        {
+          time1: "13:00",
+          time2: "15:00",
+          days: [
+            {
+              day: "Пн",
+              items: []
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "yellow",
+                  title: "Домашнее задание",
+                  time: "13:00 - 14:00",
+                  description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
+                }
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "mt-50",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "14:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-10 green lunch custom-width",
+                  title: "Персональное занятие",
+                  time: "15:00 - 16:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "mt-190 green lunch custom-width",
+                  title: "Персональное занятие",
+                  time: "15:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Пт",
+              items: []
+            },
+            {
+              day: "Вс",
+              items: [
+                {
+                  class: "",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "13:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                }
+              ]
+            },
+          ]
+        },
+        {
+          time1: "16:00",
+          time2: "18:00",
+          days: [
+            {
+              day: "Пн",
+              items: []
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "lunch",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "19:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                }
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "green custom-width",
+                  title: "Персональное занятие",
+                  time: "16:00 - 19:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "green custom-width",
+                  title: "Персональное занятие",
+                  time: "16:00 - 19:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+                {
+                  class: "mt-50  lunch",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "19:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                }
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: "mt-40 green lunch custom-width",
+                  title: "Персональное занятие",
+                  time: "16:30 - 18:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Вс",
+              items: []
+            },
+          ]
+        },
+      ]
     },
     {
       mobile: [
-        {
-          class: "",
-          title: "Live class",
-          time: "1-3pm BST",
-          description: "Jump into our live class with designers",
-        },
-        {
-          class: "homework-block",
-          title: "Homework",
-          time: "2-3hrs",
-          description: "Spend time completing your weekly design tasks",
-        },
-        {
-          class: "one-to-one-block",
-          title: "Office hours",
-          time: "1pm",
-          description: "Ask your teacher questions",
-        },
-        {
-          class: "one-to-one-block yoga",
-          title: "Yoga",
-          time: "4pm",
-          description: "Unwind from Bootcamp with Yoga",
-        },
+        [
+          {
+            class: "green",
+            title: "Групповое занятие",
+            live: true,
+            time: "Пн 10:30 <br> Чт 11:30 <br> Вс 11:30",
+            description: "Присоединяйтесь к нашему онлайн занятию"
+          },
+          {
+            class: "yellow",
+            title: "Домашнее задание",
+            time: "Пн 12:00 <br> Чт 13:00 <br> Вс 13:00",
+            description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
+          },
+          {
+            class: "default",
+            title: "Персональное занятие",
+            time: "Ср 10:30 - 12:00 <br> Пт 9:00 - 11:30  <br> Вс 9:00 - 11:30",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
+        [
+          {
+            class: "green",
+            title: "Групповое занятие",
+            live: true,
+            time: "Пн 13:00 <br> Вт 15:00 <br> Чт 13:30 <br> Пт 15:00",
+            description: "Присоединяйтесь к нашему онлайн занятию"
+          },
+          {
+            class: "default",
+            title: "Персональное занятие",
+            time: "Пн 14:30 - 17:00 <br> Вт 13:30 <br> Ср 15:30 <br> Чт 15:00",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
+        [
+          {
+            class: "green",
+            title: "Групповое занятие",
+            live: true,
+            time: "Пн 17:00 <br> Ср 18:00",
+            description: "Присоединяйтесь к нашему онлайн занятию"
+          },
+          {
+            class: "default",
+            title: "Персональное занятие",
+            time: "Пн 16:30 - 19:00 <br> Ср 16:00 - 18:00 <br> Чт 16:00 - 19:00 <br> Пт 16:30 - 18:00",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
       ],
-      desktop: {
-        time1: "3pm",
-        time2: "5pm",
-        days: [
-          {
-            day: "Mon",
-            class: "",
-            live: "false",
-            title: "",
-            time: "",
-            description: "",
-          },
-          {
-            day: "Tue",
-            class: "day-class",
-            live: "true",
-            title: "Live class",
-            time: "3-5pm BST",
-            description: "Jump into our live class with designers",
-          },
-          {
-            day: "Wed",
-            class: "homework full",
-            title: "Homework",
-            time: "1hr",
-            description: "Review what we coverered in class our Figma Live Class and crack on with your tasks this week.",
-          },
-          {
-            day: "Thue",
-            class: "one-to-one yoga ds-yoga",
-            title: "Yoga",
-            time: "4pm BST",
-            description: "Unwind from Bootcamp and get stretchy!",
-          },
-          {
-            day: "Fri",
-            class: "one-to-one top-one",
-            title: "Office Hours",
-            time: "3pm BST",
-            description: "Ask questions and check in with your class",
-          },
-          {
-            day: "Weekend",
-            class: "homework full",
-            title: "Homework",
-            time: "3pm BST",
-            description: "Wrap up this weeks design System task and enjoy your weekend with family and friends 🎉",
-          },
-        ]
-      },
+      desktop: [
+        {
+          time1: "9:00",
+          time2: "11:00",
+          days: [
+            {
+              day: "Пн",
+              items: [
+                {
+                  class: "mt-90  green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "10:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-20 yellow",
+                  title: "Домашнее задание",
+                  time: "12:00",
+                  description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
+                }
+              ]
+            },
+            {
+              day: "Вт",
+              items: []
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "mt-90 default custom-width",
+                  title: "Персональное занятие",
+                  time: "10:30 - 12:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "mt-210 lunch green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "11:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-10 yellow",
+                  title: "Домашнее задание",
+                  time: "13:00",
+                  description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
+                }
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "9:00 - 11:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Вс",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "9:00 - 11:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+                {
+                  class: "mt-75  green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "11:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-10 yellow",
+                  title: "Домашнее задание",
+                  time: "13:00",
+                  description: "Выполняйте домашнее задание,и наслаждайтесь временем с семьёй и друзьями 😊"
+                }
+              ]
+            },
+          ]
+        },
+        {
+          time1: "13:00",
+          time2: "15:00",
+          days: [
+            {
+              day: "Пн",
+              items: [
+                {
+                  class: " green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "13:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-10 default custom-width",
+                  title: "Персональное занятие",
+                  time: "14:30 - 17:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+              ]
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "mt-50 default custom-width",
+                  title: "Персональное занятие",
+                  time: "13:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+                {
+                  class: "mt-10  green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "15:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "mt-210 lunch defau custom-widthlt",
+                  title: "Персональное занятие",
+                  time: "15:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "mt-50 green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "13:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+                {
+                  class: "mt-10 default custom-width",
+                  title: "Персональное занятие",
+                  time: "15:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: "mt-190 green lunch",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "15:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Вс",
+              items: []
+            },
+          ]
+        },
+        {
+          time1: "16:00",
+          time2: "18:00",
+          days: [
+            {
+              day: "Пн",
+              items: [
+                {
+                  class: "mt-75  green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "17:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "mt-50 default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:30 - 19:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:00 - 18:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+                {
+                  class: "mt-50  green",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "18:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:00 - 19:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: "mt-50 default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:30 - 18:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+              ]
+            },
+            {
+              day: "Вс",
+              items: []
+            },
+          ]
+        },
+      ]
     },
     {
       mobile: [
-        {
-          class: "",
-          title: "Live class",
-          time: "1-3pm BST",
-          description: "Jump into our live class with designers",
-        },
-        {
-          class: "homework-block",
-          title: "Homework",
-          time: "2-3hrs",
-          description: "Spend time completing your weekly design tasks",
-        },
-        {
-          class: "one-to-one-block",
-          title: "Office hours",
-          time: "1pm",
-          description: "Ask your teacher questions",
-        },
-        {
-          class: "one-to-one-block yoga",
-          title: "Yoga",
-          time: "4pm",
-          description: "Unwind from Bootcamp with Yoga",
-        },
+        [
+          {
+            class: "yellow",
+            title: "Групповое занятие",
+            live: true,
+            time: "Вт 10:00 <br> Ср 12:30 <br> Чт 10:00",
+            description: "Присоединяйтесь к нашему онлайн занятию"
+          },
+          {
+            class: "default",
+            title: "Персональное занятие",
+            time: "Ср 10:30 - 12:00 <br> Пт 9:00 - 11:30 <br> Вс 9:00 - 11:30",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
+        [
+          {
+            class: "yellow",
+            title: "Групповое занятие",
+            live: true,
+            time: "Ср 12:30 <br> Пт 13:30",
+            description: "Присоединяйтесь к нашему онлайн занятию"
+          },
+          {
+            class: "default",
+            title: "Персональное занятие",
+            time: "Пн 14:30 - 17:00 <br> Вт 13:30 - 15:00 <br> Чт 15:00 - 16:00",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
+        [
+          {
+            class: "yellow",
+            title: "Групповое занятие",
+            live: true,
+            time: "Пн 18:30",
+            description: "Присоединяйтесь к нашему онлайн занятию"
+          },
+          {
+            class: "default",
+            title: "Персональное занятие",
+            time: "Вт 16:30 - 19:00 <br> Ср 16:00 - 18:30 <br> Чт 16:00 - 18:30 <br> Пт 16:00 - 18:30",
+            description: "Занимайтесь индивидуально с преподавателем"
+          },
+        ],
       ],
-      desktop: {
-        time1: "3pm",
-        time2: "5pm",
-        days: [
-          {
-            day: "Mon",
-            class: "",
-            live: "false",
-            title: "",
-            time: "",
-            description: "",
-          },
-          {
-            day: "Tue",
-            class: "day-class",
-            live: "true",
-            title: "Live class",
-            time: "3-5pm BST",
-            description: "Jump into our live class with designers",
-          },
-          {
-            day: "Wed",
-            class: "homework full",
-            title: "Homework",
-            time: "1hr",
-            description: "Review what we coverered in class our Figma Live Class and crack on with your tasks this week.",
-          },
-          {
-            day: "Thue",
-            class: "one-to-one yoga ds-yoga",
-            title: "Yoga",
-            time: "4pm BST",
-            description: "Unwind from Bootcamp and get stretchy!",
-          },
-          {
-            day: "Fri",
-            class: "one-to-one top-one",
-            title: "Office Hours",
-            time: "3pm BST",
-            description: "Ask questions and check in with your class",
-          },
-          {
-            day: "Weekend",
-            class: "homework full",
-            title: "Homework",
-            time: "3pm BST",
-            description: "Wrap up this weeks design System task and enjoy your weekend with family and friends 🎉",
-          },
-        ]
-      },
+      desktop: [
+        {
+          time1: "9:00",
+          time2: "11:00",
+          days: [
+            {
+              day: "Пн",
+              items: []
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "mt-70 yellow",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "10:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                }
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "mt-90 default custom-width",
+                  title: "Персональное занятие",
+                  time: "10:30 - 12:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+                {
+                  class: "mt-40 yellow",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "12:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "mt-70 yellow",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "10:00",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "9:00 - 11:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Вс",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "9:00 - 11:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+          ]
+        },
+        {
+          time1: "13:00",
+          time2: "15:00",
+          days: [
+            {
+              day: "Пн",
+              items: [
+                {
+                  class: "mt-90 default custom-width",
+                  title: "Персональное занятие",
+                  time: "14:30 - 17:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                },
+              ]
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "mt-50 default custom-width",
+                  title: "Персональное занятие",
+                  time: "13:30 - 15:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "yellow",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "12:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: " default lunch custom-width",
+                  title: "Персональное занятие",
+                  time: "15:00 - 16:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: "mt-50 yellow",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "13:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Вс",
+              items: []
+            },
+          ]
+        },
+        {
+          time1: "16:00",
+          time2: "18:00",
+          days: [
+            {
+              day: "Пн",
+              items: [
+                {
+                  class: "mt-210 lunch yellow",
+                  title: "Групповое занятие",
+                  live: true,
+                  time: "18:30",
+                  description: "Присоединяйтесь к нашему онлайн занятию"
+                },
+              ]
+            },
+            {
+              day: "Вт",
+              items: [
+                {
+                  class: "mt-50 default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:30 - 19:00",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Ср",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:00 - 18:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Чт",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:00 - 18:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Пт",
+              items: [
+                {
+                  class: "default custom-width",
+                  title: "Персональное занятие",
+                  time: "16:00 - 18:30",
+                  description: "Занимайтесь индивидуально с преподавателем"
+                }
+              ]
+            },
+            {
+              day: "Вс",
+              items: []
+            },
+          ]
+        },
+      ]
     },
   ]

@@ -2,14 +2,14 @@ mixin sticky-navigation-link(link)
   a.in-page-link.w-inline-block.wow.fadeInUp(href=link.url)= link.title
 
 
-mixin sticky-navigation(navigationLinks)
+mixin sticky-navigation(navigationLinks, navigationTitle)
 
   .bootcamp-navigation.wow.fadeInUp
     .footer-header
-      .capitals.wow.fadeInUp= navigationLinks.title
+      .capitals.wow.fadeInUp= navigationTitle
 
     each link in navigationLinks.links
       +sticky-navigation-link(link)
 
     .break
-    a.outline.full.fill.w-button.wow.fadeInUp(href="#modalContactForm", data-toggle="modal") Присоединиться
+    a.outline.full.fill.w-button.wow.fadeInUp(href="#modalContactForm", data-toggle="modal") Записаться сейчас

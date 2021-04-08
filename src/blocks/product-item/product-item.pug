@@ -18,7 +18,7 @@ mixin product-item(product)
               each tool in product.bootcampTools
                 +product-tool(tool.className, tool.src, tool.sizes, tool.alt, tool.count)
           .small-break
-          .large-text= product.description
+          .large-text= product.description_large
           .break
-          a.fill.large.mobile-full.w-button(href="#modalContactForm" data-toggle="modal") Присоединиться к курсу
+          a.fill.large.mobile-full.w-button(href="#modalContactForm" data-toggle="modal") Запишитесь сейчас
         .bootcamp-hero-image(class=product.classBg)

@@ -8,7 +8,22 @@ mixin section-video-bootcamp(productIndex)
   .video-container.small-container.wow.fadeInUp
     .video-2.w-video.w-embed.wow.fadeInUp
       +embed-responsive()
-        iframe(src=info.videoLink, frameborder='0', allowfullscreen='', loading="lazy")
+        iframe(
+          src=info.videoLink,
+          allowtransparency="true",
+          frameborder="0",
+          scrolling="no",
+          class="wistia_embed",
+          name="wistia_embed",
+          allowfullscreen,
+          mozallowfullscreen,
+          webkitallowfullscreen,
+          oallowfullscreen,
+          msallowfullscreen,
+          width="790",
+          height="444",
+          loading="lazy"
+        )
 
   .break
   .section.small-section

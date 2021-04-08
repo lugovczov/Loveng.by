@@ -205,10 +205,6 @@ body {
   color: #333
 }
 
-body::-webkit-scrollbar {
-  width: 0;
-}
-
 html.w-mod-touch * {
   background-attachment: scroll !important
 }
@@ -2070,6 +2066,11 @@ h3 {
   font-weight: 700
 }
 
+h2.title,
+h3.small-text {
+  margin-top: 0;
+}
+
 h4 {
   margin-top: 10px;
   margin-bottom: 16px;
@@ -2743,7 +2744,7 @@ strong {
 }
 
 .large-text.quote {
-  font-family: Merriweather, serif;
+  font-family: Formular, serif;
   color: #1a222b;
   font-size: 24px;
   line-height: 1.6em
@@ -3650,6 +3651,7 @@ strong {
   background-color: #f8f0d9
 }
 
+.badge.red,
 .badge.grey.yellow-badge.red {
   background-color: #ffd7d7
 }
@@ -4502,7 +4504,7 @@ strong {
   width: 100%;
   height: 480px;
   border-radius: 8px;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f8450940376_z_teacher%20(1).jpg");
+  background-image: url("../img/girl_at_the_table.jpg");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -4865,7 +4867,11 @@ strong {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns:1fr 1fr;
   -ms-grid-rows: auto;
-  grid-template-rows:auto
+  grid-template-rows:auto;
+}
+
+.section.bootcamp-hero {
+  padding-bottom: 0;
 }
 
 .bootcamp-hero.bottom-margin {
@@ -4877,13 +4883,21 @@ strong {
   width: 100%;
   height: 560px;
   border-radius: 12px;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f6b4f940249_IMG_2649%20(1).jpg");
+  background-image: url("../img/services/service_1.png");
   background-position: 50% 50%;
-  background-size: cover
+  background-size: cover;
 }
 
-.bootcamp-hero-image.design-system {
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f3295940245_IMG_1788%20(1).jpg")
+.bootcamp-hero-image.service_1 {
+  background-image: url("../img/services/service_1.png");
+}
+
+.bootcamp-hero-image.service_2 {
+  background-image: url("../img/services/service_2.png");
+}
+
+.bootcamp-hero-image.service_3 {
+  background-image: url("../img/services/service_3_page.png");
 }
 
 .bootcamp-hero-image.design-system.challenge {
@@ -4969,8 +4983,8 @@ strong {
 }
 
 .design-task.micro-class {
-  height: 400px;
-  background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f2086940252_whole_class.jpg");
+  height: 396px;
+  background-image: url("../img/nine_faces.png");
   background-position: 50% 50%;
   background-size: cover
 }
@@ -4994,13 +5008,18 @@ strong {
 }
 
 .bootcamp-row {
-  position: relative
+  position: relative;
+  width: 100%;
+}
+
+.horizontal-scroll {
+  overflow-y: auto;
 }
 
 .about {
   position: relative;
   border-radius: 12px;
-  background-image: url("../img/girl_on_beach.jpg");
+  background-image: url("../img/girl_sideways.jpg");
   background-position: top center;
   background-size: cover
 }
@@ -8228,12 +8247,25 @@ strong {
   height: 320px
 }
 
+.cal-block.bigger-cal {
+  height: auto
+}
+
 .cal-time {
   position: relative;
   width: 100%;
   padding: 8px;
   border-radius: 8px;
   background-color: #d4dbff
+}
+
+.cal-time.day-class.default {
+  background-color: #d4dbff
+}
+
+.cal-time.day-class.yellow {
+  border: 1px dashed #f1f1f1;
+  background-color: #f8f0d9
 }
 
 .cal-time.homework {
@@ -8251,6 +8283,76 @@ strong {
   margin-bottom: 5px;
   border: 1px dashed #f1f1f1;
   background-color: #f8f0d9
+}
+
+.cal-time.yellow {
+  border: 1px dashed #f1f1f1;
+  background-color: #f8f0d9
+}
+
+.cal-time.day-class.green,
+.cal-time.green {
+  background-color: #dde7bf
+}
+
+.cal-time.day-class.custom-width {
+  min-width: 132px;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-25 {
+  margin-top: 25px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-70 {
+  margin-top: 70px !important;
+}
+
+.mt-75 {
+  margin-top: 75px !important;
+}
+
+.mt-90 {
+  margin-top: 90px !important;
+}
+
+.lunch.mt-150 {
+  margin-top: 150px !important;
+}
+
+.lunch.mt-190 {
+  margin-top: 190px !important;
+}
+
+.lunch.mt-200 {
+  margin-top: 200px !important;
+}
+
+.lunch.mt-210 {
+  margin-top: 210px !important;
+}
+
+.lunch.mt-250 {
+  margin-top: 250px !important;
 }
 
 .cal-time.one-to-one.mobile-one {
@@ -8299,7 +8401,7 @@ strong {
 }
 
 .cal-time.day-class.lunch {
-  margin-top: 120px
+  margin-top: 175px
 }
 
 .cal-time.night-class {
@@ -8340,16 +8442,16 @@ strong {
 }
 
 .cal-text.description._9am {
-  margin-bottom: 100px
+  margin-bottom: 160px
 }
 
 .cal-text.description._12pm {
-  margin-bottom: 120px
+  margin-bottom: 110px
 }
 
 .timing {
   position: relative;
-  left: -40px;
+  left: -20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10340,8 +10442,8 @@ strong {
     border-left-color: #d5d1c4
   }
   .design-task.micro-class {
-    height: 371px;
-    background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f2086940252_whole_class.jpg");
+    height: 450px;
+    background-image: url("../img/nine_faces.png");
     background-position: 50% 50%;
     background-size: cover
   }
@@ -10354,7 +10456,7 @@ strong {
   }
   .about {
     position: relative;
-    background-image: url("../img/girl_on_beach.jpg");
+    background-image: url("../img/girl_sideways.jpg");
     background-position: top center;
     background-size: cover
   }
@@ -10885,9 +10987,6 @@ strong {
   .extra-large-break {
     height: 2px
   }
-  .teacher-image {
-    background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f8450940376_z_teacher%20(1).jpg")
-  }
   .bootcamp-date.lunch {
     box-shadow: -4px -4px 12px 0 #fff, 4px 4px 12px 0 rgba(0, 0, 0, .06)
   }
@@ -10926,8 +11025,8 @@ strong {
     font-size: 13px
   }
   .design-task.micro-class {
-    height: 440px;
-    background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f2086940252_whole_class.jpg")
+    height: 525px;
+    background-image: url("../img/nine_faces.png")
   }
   .image-15 {
     padding-bottom: 24px;
@@ -11415,8 +11514,8 @@ strong {
     background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9fdec894037e_pencil.png")
   }
   .design-task.micro-class {
-    height: 440px;
-    background-image: url("https://uploads-ssl.webflow.com/5f8e97a7f04a9fe98d9401a6/5f8e97a7f04a9f2086940252_whole_class.jpg")
+    height: 525px;
+    background-image: url("../img/nine_faces.png")
   }
   .div-block-8 {
     width: 100%;
@@ -11602,6 +11701,18 @@ strong {
   .large-text-3, .large-text-4 {
     max-width: 800px;
     font-size: 1.5em
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .design-task.micro-class {
+    height: 366px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .design-task.micro-class {
+    height: 320px;
   }
 }
 
@@ -12285,6 +12396,12 @@ strong {
   .tribe-image {
     max-width: 100%
   }
+  .section.bootcamp-hero {
+    padding-bottom: 40px;
+  }
+  .design-task.micro-class {
+    height: 396px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -12754,6 +12871,9 @@ strong {
   .cal-block {
     height: 320px
   }
+  .cal-block.bigger-cal {
+    height: auto
+  }
   .cal-time.one-to-one.mobile-one {
     height: 60px
   }
@@ -12803,7 +12923,7 @@ strong {
     font-weight: 500
   }
   .timing {
-    left: -29px
+    left: -20px
   }
   .text-posiition {
     display: none
@@ -12830,12 +12950,15 @@ strong {
   .key-block.homework-block {
     border-left-color: #ddefff
   }
+  .key-block.yellow,
   .key-block.one-to-one-block {
     border-left-color: #fef4d3
   }
+  .key-block.green,
   .key-block.one-to-one-block.yoga {
     border-left-color: #dde7bf
   }
+  .key-block.default,
   .key-block.event-block {
     border-left-color: #e2dffa
   }
@@ -12886,6 +13009,9 @@ strong {
   .grid-9 {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns:1fr 1fr
+  }
+  .design-task.micro-class {
+    height: 320px !important;
   }
 }
 
@@ -13211,8 +13337,8 @@ strong {
   }
   .tool-grid.bootamp-tools {
     margin-left: auto;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns:1fr 1fr
+    -ms-grid-columns: 1fr;
+    grid-template-columns:1fr
   }
   .tool-grid.club-grid {
     -ms-grid-columns: 1fr;
@@ -13519,6 +13645,9 @@ strong {
   .design-team {
     display: none
   }
+  .design-task.micro-class {
+    height: 270px !important;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -13528,6 +13657,16 @@ strong {
 
   #sidebar .slide-menu {
     padding: 10px 15px;
+  }
+  .design-task.micro-class {
+    height: 200px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .subtitle {
+    font-size: 27px;
+    line-height: 35px;
   }
 }
 
@@ -13690,7 +13829,7 @@ strong {
 
 .webp_supported {
   .about {
-    background-image: url("../img/girl_on_beach.webp");
+    background-image: url("../img/girl_sideways.webp");
   }
 
   .container.promo-image {
@@ -13704,6 +13843,26 @@ strong {
 
   .container.promo-image.design-system {
     background-image: linear-gradient(315deg, rgba(10, 37, 64, .6), hsla(0, 0%, 100%, .2) 72%), url("../img/mountains.webp")
+  }
+
+  .bootcamp-hero-image.service_1 {
+    background-image: url("../img/services/service_1.webp");
+  }
+
+  .bootcamp-hero-image.service_2 {
+    background-image: url("../img/services/service_2.webp");
+  }
+
+  .bootcamp-hero-image.service_3 {
+    background-image: url("../img/services/service_3_page.webp");
+  }
+
+  .teacher-image {
+    background-image: url("../img/girl_at_the_table.webp");
+  }
+
+  .design-task.micro-class {
+    background-image: url("../img/nine_faces.webp")
   }
 }
 

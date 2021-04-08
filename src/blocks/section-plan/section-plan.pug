@@ -22,8 +22,8 @@ mixin plan-item(planItem)
 mixin section-plan(productIndex)
   include section-plan.data.pug
 
-  +section-row-test-small(productInfo[productIndex])
+  +section-row-test-small(productInfo)
 
   .curriculum
-    each planItem in plan[productIndex]
+    each planItem in plan
       +plan-item(planItem)

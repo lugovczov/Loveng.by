@@ -2,24 +2,18 @@ mixin product-tabs(productIndex)
   include product-tabs.data.pug
   -
     var productInfoPart1 = infoPart1[productIndex]
-    var productInfoPart2 = infoPart2[productIndex]
-    var productInfoPart3 = infoPart3[productIndex]
 
   .div-block-25
     .w-tabs(data-duration-in="300", data-duration-out="100")
       +tabs([
         {
           'id': 'tab-21',
-          'text': '⚡️ Live Classes',
+          'text': '⚡️ Живые занятия',
           'isActive': true,
         },
         {
           'id': 'tab-22',
-          'text': 'Homework',
-        },
-        {
-          'id': 'tab-23',
-          'text': 'Events',
+          'text': 'Домашнее задание',
         },
       ], 'tabs tabs-menu w-tab-menu')
         +tabs-item('tab-21', true, 'some')
@@ -33,27 +27,44 @@ mixin product-tabs(productIndex)
             .video-container.small-container.wow.fadeInUp
               .video-2.w-video.w-embed.wow.fadeInUp
                 +embed-responsive()
-                  iframe(src=productInfoPart1.videoLink, frameborder='0', allowfullscreen='', loading="lazy")
+                  iframe(
+                    src=productInfoPart1.videoLink
+                    allowtransparency="true",
+                    frameborder="0",
+                    scrolling="no",
+                    class="wistia_embed",
+                    name="wistia_embed",
+                    allowfullscreen,
+                    mozallowfullscreen,
+                    webkitallowfullscreen,
+                    oallowfullscreen,
+                    msallowfullscreen,
+                    width="1270",
+                    height="715",
+                    loading="lazy"
+                  )
             .small-break
 
         +tabs-item('tab-22')
           .schedule-container
-            h6= productInfoPart2.title
-            .regular-text= productInfoPart2.subtitle
+            h6= infoPart2.title
+            .regular-text= infoPart2.subtitle
             .small-break
-            .regular-text= productInfoPart2.description
-            .small-break
-
-            img.image-15(src=productInfoPart2.imgSrc, alt="", loading="lazy")
+            .regular-text= infoPart2.description
             .small-break
 
-        +tabs-item('tab-23')
-          .schedule-container
-            h6= productInfoPart3.title
-            .regular-text= productInfoPart3.subtitle
-            .small-break
-            .regular-text= productInfoPart3.description
-            .small-break
+            picture
+              source(
+                type="image/webp",
+                srcset="img/homework.webp",
+                sizes="(max-width: 991px) 100vw, (max-width: 1279px) 94vw, (max-width: 1439px) 1198px, 1358px"
+              )
+              img(
+                src="img/homework.png",
+                sizes="(max-width: 991px) 100vw, (max-width: 1279px) 94vw, (max-width: 1439px) 1198px, 1358px",
+                alt='homework',
+                class="image-15",
+                loading="lazy"
+              )
 
-            img.check-in(src=productInfoPart3.imgSrc, alt="", loading="lazy")
             .small-break

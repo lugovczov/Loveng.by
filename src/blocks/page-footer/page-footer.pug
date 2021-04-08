@@ -5,9 +5,9 @@ mixin footer-column(column)
     each link in column.links
       .footer-link
         if (link.noModal)
-          a(href= link.url)= link.title
+          a(href=link.url)= link.title
         else
-          a(href= link.url, data-toggle="modal")= link.title
+          a(href=link.url, data-toggle="modal")= link.title
         if link.notify
           .notify
             span= link.notify

@@ -1,55 +1,83 @@
 -
-  var productInfo = [
-    {
-      id: "link-curric",
-      text1: "Design System Curriculum",
-      text2: "Learn-by-doing and scale your Design System each week",
-      text3: "Our online Design System Bootcamp is setup to help you build and iterate on a Design System step-by-step with a practical curriculum that focuses 100% on learn-by-doing. During our Design System Bootcamp you'll learn how to sell, design, manage, and scale a Design System with your team. This Bootcamp is also a super opportunity to level up your UI skills, learning best practices of a huge range of styles, components, and patterns.",
-    },
-    {
-      id: "link-curric",
-      text1: "Design System Curriculum",
-      text2: "Learn-by-doing and scale your Design System each week",
-      text3: "Our online Design System Bootcamp is setup to help you build and iterate on a Design System step-by-step with a practical curriculum that focuses 100% on learn-by-doing. During our Design System Bootcamp you'll learn how to sell, design, manage, and scale a Design System with your team. This Bootcamp is also a super opportunity to level up your UI skills, learning best practices of a huge range of styles, components, and patterns.",
-    },
-    {
-      id: "link-curric",
-      text1: "Design System Curriculum",
-      text2: "Learn-by-doing and scale your Design System each week",
-      text3: "Our online Design System Bootcamp is setup to help you build and iterate on a Design System step-by-step with a practical curriculum that focuses 100% on learn-by-doing. During our Design System Bootcamp you'll learn how to sell, design, manage, and scale a Design System with your team. This Bootcamp is also a super opportunity to level up your UI skills, learning best practices of a huge range of styles, components, and patterns.",
-    },
-  ];
+  var productInfo = {
+    id: "link-curric",
+    text1: "УЧЕБНЫЙ ПЛАН",
+    text2: "Учитесь на практике с помощью современной учебной программы",
+    text3: "Этот курс предназначен для тех, кто готов учиться и хочет развиваться в удобное для него время и месте. Интерактивность, позитивная атмосфера и эффективность – девиз наших занятий. Вы сможете обучаться как индивидуально, так и в небольших группах. Занятия в группах даст вам возможность постоянного роста и живого общения с одногруппниками.",
+  };
 
   plan = [
-    [
-      {
-        title: "Prepwork",
-        badge: "Pre-Bootcamp",
-        badgeClass: "prep",
-        description: {
-          text: "As well as meeting your Design System classmates in our Bootcamp slack, you'll be asked to complete prepwork using Figma, Loom, and Notion to get you up to speed on basic component creation and UI principles. During your prep work you'll learn how to identify what's wrong with your product, why you need a Design System and how to assemble your Design System team",
-          list: [
-            "Meet your classmates in Slack 👋",
-            "Create Notion, Figma, and Loom accounts.",
-            "Familiarise yourself with Design Systems",
-          ]
-        },
+    {
+      title: "Знакомство",
+      badge: "1 занятие",
+      badgeClass: "prep",
+      description: {
+        text: "На первом занятии мы познакомимся с одногруппниками и разберём программы, в которых будем работать и использовать, что бы наше обучение было максимально комфортным и продуктивным.",
+        list: [
+          "Познакомитесь со своими одногруппниками",
+          "Создайте учетную запись в Zoom и Miro",
+          "Ознакомьтесь с программой курса и преподавателем",
+          "Определите свои цели и источник мотивации",
+          "Вперёд, к новым вершинам! 😉",
+        ]
       },
-    ],
-    [
-      {
-        title: "Prepwork",
-        badge: "Pre-Bootcamp",
-        badgeClass: "prep",
-        description: "",
+    },
+    {
+      title: "Новая лексика",
+      badge: "весь период",
+      description: {
+        text: "На протяжении всех занятий мы будем постоянно пополнять и расширять ваш словарный запас. Уйдём от скучного заучивания и начнём использовать полученные знания на практике.",
+        list: [
+          "Актуальные слова",
+          "Интересные фразеологизмы",
+          "Топ 50 фраз для любых случаев в жизни",
+        ]
       },
-    ],
-    [
-      {
-        title: "Prepwork",
-        badge: "Pre-Bootcamp",
-        badgeClass: "prep",
-        description: "",
+    },
+    {
+      title: "Проработка грамматики",
+      badge: "весь период",
+      description: {
+        text: "К сожалению, грамматика самый страшный и не любимый аспект при изучении иностранного языка. Пришло время ломать стереотипы. Мы сделаем всё, чтобы вы навсегда разобрались во временах, артиклях и других сложных темах.",
+        list: [
+          "Доступные объяснения",
+          "Удобные схемы и таблицы",
+          "Интерактивность",
+          "Никакого бездумного заучивания",
+        ]
       },
-    ],
-  ]
+    },
+    {
+      title: "Живые диалоги",
+      badge: "весь период",
+      description: {
+        text: "Мы за живое общение! В настоящий момент одним из важных аспектов в обучении иностранного языка является говорение. Мы всегда начинаем наши занятия именно с этого.",
+        list: [
+          "Обсуждение актуальных тем",
+          "Постановка произношения",
+          "Новости",
+          "Обсуждение фильмов и сериалов",
+        ]
+      },
+    },
+    {
+      title: "Аудирование",
+      badge: "весь период",
+      description: {
+        text: "Что бы понять иностранную речь, нужно много слушать. Этим мы и займёмся.",
+        list: [
+          "Интересные подкасты",
+          "Аудирование",
+          "Просмотр видео",
+        ]
+      },
+    },
+    {
+      title: "🎉 Церемония Вручения Дипломов",
+      badge: "конец обучения",
+      badgeClass: "post",
+      description: {
+        text: "Наша выпускная церемония — это отличный повод для вас отпраздновать то, чего вы достигли во время курса. Мы вместе проанализируем ваши успехи и порадуемся тому, как много мы выучили и достигли. И, конечно же, вы получите свой заветный сертификат об окончании курса.",
+      },
+    },
+  ];

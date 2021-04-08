@@ -2,21 +2,22 @@ mixin mobile-schedule-block(data)
 
   .key-block(class=data.class)
     .cal-text.key-text= data.title
-    .cal-text.key-text.small-key= data.time
+    .cal-text.key-text.small-key !{data.time}
     .cal-text.key-text.small-key= data.description
 
 
 mixin desktop-schedule-block(data)
 
-  .cal-block.smaller-cal
+  .cal-block.bigger-cal
     .cal-text.description.day-of-the-week= data.day
-    if (data.title)
-      .cal-time(class=data.class)
-        .cal-text= data.title
-        .cal-text.description.grey= data.time
-        .cal-text.description= data.description
-        if (data.live)
-          +live-dot
+
+    each item in data.items
+      .cal-time.day-class(class=item.class)
+        .cal-text= item.title
+        .cal-text.description.grey= item.time
+        .cal-text.description= item.description
+        if (item.live)
+          +live-dot()
 
 
 mixin section-schedule(productIndex)
@@ -27,22 +28,79 @@ mixin section-schedule(productIndex)
     var scheduleMobile = productSchedule[productIndex].mobile;
     var scheduleDesktop = productSchedule[productIndex].desktop;
 
-  +section-row-test-small(productInfo[productIndex])
+  +section-row-test-small(productInfo)
   .large-break
 
-  .key
-    each schedule in scheduleMobile
-      +mobile-schedule-block(schedule)
+  .tabs-6.w-tabs
+    +tabs([
+      {
+        'id': 'tab-51',
+        'text': 'Утро',
+        'isActive': true,
+      },
+      {
+        'id': 'tab-52',
+        'text': 'Обед',
+      },
+      {
+        'id': 'tab-53',
+        'text': 'Вечер',
+      },
+    ], 'tabs tabs-menu tabs-menu-3 w-tab-menu')
 
-  .break.hide-desktop
+      +tabs-item('tab-51', true, 'horizontal-scroll')
+        .regular-text.grey Расписание приблизительное и может претерпеть небольшие корректировки
+        .small-break
 
-  .calendar.desktop.wow.fadeInUp
-    .timing
-      .text-posiition
-        .cal-text.description._9am= scheduleDesktop.time1
-        .cal-text.description._12pm= scheduleDesktop.time2
-    each scheduleItem in scheduleDesktop.days
-      +desktop-schedule-block(scheduleItem)
+        .key
+          each schedule in scheduleMobile[0]
+            +mobile-schedule-block(schedule)
+
+        .break.hide-desktop
+
+        .calendar.desktop
+          .timing
+            .text-posiition
+              .cal-text.description._9am= scheduleDesktop[0].time1
+              .cal-text.description._12pm= scheduleDesktop[0].time2
+          each scheduleItem in scheduleDesktop[0].days
+            +desktop-schedule-block(scheduleItem)
+
+      +tabs-item('tab-52', false, 'horizontal-scroll')
+        .regular-text.grey Расписание приблизительное и может претерпеть небольшие корректировки
+        .small-break
+
+        .key
+          each schedule in scheduleMobile[1]
+            +mobile-schedule-block(schedule)
+
+        .break.hide-desktop
+
+        .calendar.desktop
+          .timing
+            .text-posiition
+              .cal-text.description._9am= scheduleDesktop[1].time1
+              .cal-text.description._12pm= scheduleDesktop[1].time2
+          each scheduleItem in scheduleDesktop[1].days
+            +desktop-schedule-block(scheduleItem)
+
+      +tabs-item('tab-53', false, 'horizontal-scroll')
+        .regular-text.grey Расписание приблизительное и может претерпеть небольшие корректировки
+        .small-break
+
+        .key
+          each schedule in scheduleMobile[2]
+            +mobile-schedule-block(schedule)
+
+        .break.hide-desktop
+
+        .calendar.desktop
+          .timing
+            .text-posiition
+              .cal-text.description._9am= scheduleDesktop[2].time1
+              .cal-text.description._12pm= scheduleDesktop[2].time2
+          each scheduleItem in scheduleDesktop[2].days
+            +desktop-schedule-block(scheduleItem)
 
   .break
   .large-break
