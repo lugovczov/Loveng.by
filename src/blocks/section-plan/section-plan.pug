@@ -3,7 +3,7 @@ mixin plan-item(planItem)
   .accordion.wow.fadeInUp
     .accordion-header
       .title-left
-        img.accordion-chevron(src="img/logos/chevron.svg", alt="стрелка показывающая открытие блока", loading="lazy")
+        img.accordion-chevron(src="img/logos/chevron.svg", alt="стрелка показывающая открытие блока", loading="lazy", width="20px" height="20px")
         h6.accordion-text= planItem.title
       .badge.grey.hide-mobile(class=planItem.badgeClass)= planItem.badge
 
@@ -22,7 +22,7 @@ mixin plan-item(planItem)
 mixin section-plan(productIndex)
   include section-plan.data.pug
 
-  +section-row-test-small(productInfo)
+  +section-row-test-small(productInfo[productIndex])
 
   .curriculum
     each planItem in plan

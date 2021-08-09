@@ -1,7 +1,13 @@
 extends ../pug/products.pug
 
 block meta
-  title Loveng - Английский для взрослых
+  title Курсы английского языка для путешествий | LovEng
+  meta(name="description", content="Онлайн-курсы английского языка для путешествий. Эффективная методика изучения. Английский язык для туризма и путешествий в онлайн школе LovEng")
+  meta(name="Keywords", content="английский для путешествий")
 
 block variables
   - var productIndex = 0
+
+block append page-bottom
+  script(src='js/videoask.js', async)
+  script(src='https://www.videoask.com/embed/embed.js', async)

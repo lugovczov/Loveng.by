@@ -6,4 +6,4 @@ mixin metric-item(metric, textClass)
     .tiny-break
     .metric-block
       .capitals= metric.title
-      div(class=textClass)= metric.description
+      div(class=textClass) !{metric.description}

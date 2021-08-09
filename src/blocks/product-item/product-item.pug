@@ -6,10 +6,10 @@ mixin product-item(product)
 
       .w-layout-grid.bootcamp-hero.wow.fadeInUp
         div
-          h3= product.title
+          h1.page-title !{product.page_title}
           h6= product.employment + ' · ' + product.duration
           .inline
-            img.stars(src="img/logos/star.svg", alt="stars for rating", loading="lazy")
+            img.stars(src="img/logos/star.svg", alt="stars for rating", loading="lazy", width="18px", height="18px")
             +product-rating(product.rating, 'regular-text')
           .tiny-break
           .break

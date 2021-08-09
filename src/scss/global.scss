@@ -2071,7 +2071,7 @@ h3.small-text {
   margin-top: 0;
 }
 
-h4 {
+.page-title, h4 {
   margin-top: 10px;
   margin-bottom: 16px;
   font-family: Inter, sans-serif;
@@ -10632,7 +10632,7 @@ strong {
   h3 {
     line-height: 1.3em
   }
-  h4 {
+  .page-title, h4 {
     max-width: 720px;
     font-family: Inter, sans-serif
   }
@@ -11309,7 +11309,7 @@ strong {
 }
 
 @media screen and (min-width: 1920px) {
-  h3, h4 {
+  .page-title, h3, h4 {
     font-size: 48px;
     line-height: 56px
   }
@@ -12405,7 +12405,7 @@ strong {
 }
 
 @media screen and (max-width: 767px) {
-  h4 {
+  .page-title, h4 {
     font-size: 32px;
     line-height: 40px
   }
@@ -13012,6 +13012,9 @@ strong {
   }
   .design-task.micro-class {
     height: 320px !important;
+  }
+  .cal-time.day-class.custom-width {
+    min-width: unset
   }
 }
 
@@ -13668,6 +13671,17 @@ strong {
     font-size: 27px;
     line-height: 35px;
   }
+
+  .mobile-less-text li a {
+    font-size: 13px !important
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .title-mobi-small {
+    font-size: 32px;
+    line-height: 40px
+  }
 }
 
 @font-face {
@@ -13866,5 +13880,8 @@ strong {
   }
 }
 
+.no-wrap {
+  white-space: nowrap
+}
 
 @import "./entries.scss";

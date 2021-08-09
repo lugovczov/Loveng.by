@@ -16,36 +16,37 @@ mixin hero-face-container(src, src_webp, name, index)
 
 mixin section-text-heroes
 
-  .container.w-container.body-wrapper
-    .section.center-align.top-header
-      +line-dotted
+  .body-wrapper
+    .container.w-container
+      .section.center-align.top-header
+        +line-dotted
 
-      .w-layout-grid.hero-columns
-        div
-          h1.wow.fadeInUp.
-            Онлайн-курсы английского языка с Loveng !
-          .large-text.wow.fadeInUp.
-            Мы-платформа Loveng!  Добро пожаловать в онлайн мир качественного и интересного изучения английского языка.
-          .break
-          a.fill.large.mobile-full.w-inline-block.wow.fadeInUp(href="#modalContactForm", data-toggle="modal")
-            div Оставить заявку
-        .hero-wrapper
-          .w-layout-grid.hero-faces
-            .hero-face-container
-              +hero-face-container('img/hero/hero_1.jpg', 'img/hero/hero_1.webp', 'james', '1')
-              img(src="img/arrows/arrow_1.svg", alt="стрелка с текстом 'Coll!'", class="kate-cursor cursor_1", loading="lazy")
-            .hero-face-container
-              +hero-face-container('img/hero/hero_2.jpg', 'img/hero/hero_2.webp', 'eli', '2')
-              img(src="img/arrows/arrow_2.svg", alt="стрелка с текстом 'Современно'", class="connor-cursor cursor_2", loading="lazy")
-            .hero-face-container
-              +hero-face-container('img/hero/hero_3.jpg', 'img/hero/hero_3.webp', 'pem', '3')
-              img(src="img/arrows/arrow_3.svg", alt="стрелка с текстом 'Увлекательно'", class="rianne-cursor cursor_3", loading="lazy")
-            .hero-face-container
-              +hero-face-container('img/hero/hero_4.jpg', 'img/hero/hero_4.webp', 'laura', '4')
-              img(src="img/arrows/arrow_4.svg", alt="стрелка с текстом 'Интересно'", class="cyril-curosr cursor_4", loading="lazy")
-            .hero-face-container
-              +hero-face-container('img/hero/hero_5.jpg', 'img/hero/hero_5.webp', 'jonathan', '5')
-              img(src="img/arrows/arrow_5.svg", alt="стрелка с текстом 'Я в восторге'", class="pem-cursor cursor_5", loading="lazy")
-            .hero-face-container
-              +hero-face-container('img/hero/hero_6.jpg', 'img/hero/hero_6.webp', 'kate', '6')
-              img(src="img/arrows/arrow_6.svg", alt="стрелка с текстом 'Great!'", class="mauricio cursor_6", loading="lazy")
+        .w-layout-grid.hero-columns
+          div
+            h1.title-mobi-small.wow.fadeInUp.
+              Онлайн-курсы английского языка с Loveng !
+            .large-text.wow.fadeInUp.
+              Мы-платформа Loveng!  Добро пожаловать в онлайн мир качественного и интересного изучения английского языка.
+            .break
+            a.fill.large.mobile-full.w-inline-block.wow.fadeInUp(href="#modalContactForm", data-toggle="modal")
+              div Оставить заявку
+          .hero-wrapper
+            .w-layout-grid.hero-faces
+              .hero-face-container
+                +hero-face-container('img/hero/hero_1.jpg', 'img/hero/hero_1.webp', 'james', '1')
+                img(src="img/arrows/arrow_1.svg", alt="стрелка с текстом 'Coll!'", class="kate-cursor cursor_1", loading="lazy")
+              .hero-face-container
+                +hero-face-container('img/hero/hero_2.jpg', 'img/hero/hero_2.webp', 'eli', '2')
+                img(src="img/arrows/arrow_2.svg", alt="стрелка с текстом 'Современно'", class="connor-cursor cursor_2", loading="lazy")
+              .hero-face-container
+                +hero-face-container('img/hero/hero_3.jpg', 'img/hero/hero_3.webp', 'pem', '3')
+                img(src="img/arrows/arrow_3.svg", alt="стрелка с текстом 'Увлекательно'", class="rianne-cursor cursor_3", loading="lazy")
+              .hero-face-container
+                +hero-face-container('img/hero/hero_4.jpg', 'img/hero/hero_4.webp', 'laura', '4')
+                img(src="img/arrows/arrow_4.svg", alt="стрелка с текстом 'Интересно'", class="cyril-curosr cursor_4", loading="lazy")
+              .hero-face-container
+                +hero-face-container('img/hero/hero_5.jpg', 'img/hero/hero_5.webp', 'jonathan', '5')
+                img(src="img/arrows/arrow_5.svg", alt="стрелка с текстом 'Я в восторге'", class="pem-cursor cursor_5", loading="lazy")
+              .hero-face-container
+                +hero-face-container('img/hero/hero_6.jpg', 'img/hero/hero_6.webp', 'kate', '6')
+                img(src="img/arrows/arrow_6.svg", alt="стрелка с текстом 'Great!'", class="mauricio cursor_6", loading="lazy")

@@ -3,7 +3,7 @@ mixin product-prices(productIndex)
   include product-prices.data.pug
   - var productPrice = prices[productIndex]
 
-  +section-row-test-small(productInfo)
+  +section-row-test-small(productInfo[productIndex])
   .large-break
 
   .tabs-5.w-tabs(data-duration-in="300", data-duration-out="100")

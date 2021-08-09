@@ -1,7 +1,14 @@
 extends ../pug/products.pug
 
 block meta
-  title Loveng - Продукт Английский для детей
+  title Курсы английского языка для детей | LovEng
+
+  meta( name="description", content="Онлайн-курсы английского языка для детей. Удобное расписание и эффективная форма обучения. Курсы английского для самых маленьких учеников в школе LovEng")
+  meta( name="Keywords", content="английский для детей, курсы английского для школьников")
 
 block variables
   - var productIndex = 1
+
+block append page-bottom
+  script(src='js/videoask.js', async)
+  script(src='https://www.videoask.com/embed/embed.js', async)

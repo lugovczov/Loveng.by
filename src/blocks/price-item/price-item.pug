@@ -26,7 +26,7 @@ mixin price-item(data)
           span.strike= data.price
           |  #{data.price_after_discount}
     .break
-    a.outline.full.fill.w-button.wow.fadeInUp(href='#modalContactForm', data-toggle="modal") Записывайтесь сейчас
+    a.outline.full.fill.w-button.no-wrap.wow.fadeInUp(href='#modalContactForm', data-toggle="modal") Записывайтесь сейчас
     .card-tools.pricing-tools
       .card-tool
         img.card-tool-logo(src='img/logos/zoom_logo.svg', alt='логотип zoom', loading="lazy")
@@ -41,6 +41,6 @@ mixin price-item(data)
       //.small-break
       each title in data.list
         .check-bloxk
-          img.check-icon(src='img/logos/arrow_check.svg', alt='иконка стрелки', loading="lazy")
+          img.check-icon(src='img/logos/arrow_check.svg', alt='иконка стрелки', loading="lazy", width="24px", height="24px")
           .small-text= title
 

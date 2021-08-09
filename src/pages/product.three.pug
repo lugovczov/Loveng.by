@@ -1,7 +1,13 @@
 extends ../pug/products.pug
 
 block meta
-  title Loveng - Английский для компаний
+  title Корпоративные курсы английского языка для компаний | LovEng
+  meta(name="description", content="Онлайн-курсы английского языка для бизнеса. Корпоративное обучение английскому языку с гарантированным результатом в онлайн-школе LovEng")
+  meta(name="Keywords", content="английский для компаний, корпоративные курсы английского языка")
 
 block variables
   - var productIndex = 2
+
+block append page-bottom
+  script(src='js/videoask.js', async)
+  script(src='https://www.videoask.com/embed/embed.js', async)

@@ -1,8 +1,11 @@
-mixin section-title-full-img-text(data)
+mixin section-title-full-img-text(productIndex)
 
-  h2.title.wow.fadeInUp(id=data.id)= data.title
-  h4.subtitle.wow.fadeInUp= data.subtitle
-  .large-text.wow.fadeInUp= data.description
+  include product-info.data.pug
+  - var productInfo = productInfo[productIndex]
+
+  h2.title.wow.fadeInUp(id=productInfo.id)= productInfo.title
+  h3.subtitle.wow.fadeInUp= productInfo.subtitle
+  .large-text.wow.fadeInUp= productInfo.description
   .blog-break
 
-  .design-task.wow.fadeInUp(class=data.imgClass)
+  .design-task.wow.fadeInUp(class=productInfo.imgClass)
